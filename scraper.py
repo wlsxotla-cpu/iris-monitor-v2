@@ -6,14 +6,15 @@ IRIS(범부처통합연구지원시스템) 사업공고 스크래퍼
   results/latest.md, results/latest.json 파일로 저장한다.
 - 부처 필터링은 여기서 하지 않는다. 전체 부처를 다 가져온 뒤, 어떤 부처를
   볼지는 대시보드(Streamlit)에서 사용자가 직접 선택한다.
-- 각 공고의 상세페이지 링크와 첨부파일 링크도 함께 수집한다.
+- 공고마다 상세페이지를 따로 방문하지 않고, 목록 페이지에 있는 링크를
+  그대로 추출한다 (속도를 위한 선택 - 상세페이지 방문은 시간이 오래 걸림).
 - 이전 결과와 비교하는 로직은 없다 (매번 전체 현재 목록을 그대로 저장).
 
 주의:
-  상세페이지/첨부파일 추출 부분은 사이트의 실제 상세페이지 구조를 직접
-  확인하지 못한 상태에서 최선으로 작성한 부분입니다. 목록 파싱은 이미
-  검증됐지만, 상세페이지 쪽에서 오류가 나거나 링크가 비어있을 수 있습니다.
-  그런 경우 Actions 로그를 공유해주시면 바로 고치겠습니다.
+  링크가 자바스크립트 기반(javascript:...)이라면 그대로는 클릭해서 이동할
+  수 없어 detail_url이 비어있을 수 있다. 그런 항목은 raw_link 필드에 원본을
+  남겨두니, latest.json에서 실제 값을 확인해서 공유해주시면 실제 이동
+  가능한 링크 패턴으로 바꾸는 방법을 찾아보겠습니다.
 """
 
 import json
@@ -31,10 +32,6 @@ TABS = ["접수예정", "접수중"]
 
 # 참고용 (부처 필터링에는 더 이상 쓰이지 않음 - 대시보드에서 선택)
 DEPARTMENTS_HINT = ["산업통상부", "중소벤처기업부", "과학기술정보통신부"]
-
-# 첨부파일로 볼 만한 링크를 찾기 위한 확장자/키워드
-ATTACHMENT_HINTS = (".hwp", ".hwpx", ".pdf", ".zip", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx")
-ATTACHMENT_KEYWORDS = ("첨부", "다운로드", "download")
 
 KST = timezone(timedelta(hours=9))
 
@@ -92,6 +89,7 @@ def parse_items(page_text: str, tab: str, page_num: int):
                 "status": m.group("status").strip(),
                 "type": m.group("type").strip(),
                 "detail_url": None,
+                "raw_link": None,
                 "attachments": [],
             }
         )
@@ -116,7 +114,9 @@ def collect_list(page):
         while True:
             body_text = page.inner_text("body")
             total_pages = get_total_pages(body_text)
-            all_items.extend(parse_items(body_text, tab, page_num))
+            page_items = parse_items(body_text, tab, page_num)
+            extract_links_by_title(page, page_items)
+            all_items.extend(page_items)
 
             if page_num >= total_pages:
                 break
@@ -132,65 +132,35 @@ def collect_list(page):
     return all_items
 
 
-def extract_attachments(page):
-    """현재(상세) 페이지에서 첨부파일로 보이는 링크들을 뽑아낸다."""
-    attachments = []
+def extract_links_by_title(page, items):
+    """상세페이지를 따로 방문하지 않고, 지금 보이는 목록 페이지에서
+    제목 텍스트와 일치하는 링크의 href만 바로 추출한다."""
     try:
-        links = page.query_selector_all("a")
-        for link in links:
-            try:
-                text = (link.inner_text() or "").strip()
-                href = link.get_attribute("href") or ""
-            except Exception:
-                continue
-            haystack = f"{text} {href}".lower()
-            if any(ext in haystack for ext in ATTACHMENT_HINTS) or any(
-                kw in text for kw in ATTACHMENT_KEYWORDS
-            ):
-                if href and not href.startswith("javascript"):
-                    attachments.append({"name": text or href, "url": href})
+        anchors = page.query_selector_all("a")
     except Exception as e:
-        print(f"[warn] 첨부파일 추출 실패: {e}", file=sys.stderr)
-    return attachments
+        print(f"[warn] 링크 추출 실패: {e}", file=sys.stderr)
+        return
 
-
-def fetch_detail(browser, tab, page_num, title):
-    """목록에서 특정 공고를 다시 찾아가 상세페이지 링크와 첨부파일을 가져온다."""
-    detail_url = None
-    attachments = []
-    page = browser.new_page()
-    try:
-        page.goto(URL, wait_until="networkidle")
-        page.get_by_text(tab, exact=True).first.click()
-        page.wait_for_timeout(800)
-        click_search(page)
-
-        for p in range(2, page_num + 1):
-            page.get_by_text(str(p), exact=True).first.click()
-            page.wait_for_timeout(1000)
-
-        link = page.get_by_text(title, exact=True).first
-
+    title_to_href = {}
+    for a in anchors:
         try:
-            with page.context.expect_page(timeout=4000) as popup_info:
-                link.click()
-            detail_page = popup_info.value
-            detail_page.wait_for_load_state("networkidle")
-            detail_url = detail_page.url
-            attachments = extract_attachments(detail_page)
-            detail_page.close()
+            text = (a.inner_text() or "").strip()
+            href = a.get_attribute("href")
         except Exception:
-            # 새 탭이 안 열렸다면 같은 탭에서 이동했다고 가정
-            link.click()
-            page.wait_for_timeout(1500)
-            detail_url = page.url
-            attachments = extract_attachments(page)
-    except Exception as e:
-        print(f"[warn] 상세페이지 조회 실패: {title[:20]}... ({e})", file=sys.stderr)
-    finally:
-        page.close()
+            continue
+        if text and href:
+            title_to_href[text] = href
 
-    return detail_url, attachments
+    for item in items:
+        href = title_to_href.get(item["title"])
+        if not href:
+            continue
+        if href.startswith("javascript"):
+            # 자바스크립트 링크라 그대로는 못 쓴다. 원본은 남겨두고
+            # detail_url은 비워둔다 (패턴이 확인되면 나중에 채울 수 있음).
+            item["raw_link"] = href
+        else:
+            item["detail_url"] = href
 
 
 def scrape():
@@ -200,14 +170,6 @@ def scrape():
         page.goto(URL, wait_until="networkidle")
         items = collect_list(page)
         page.close()
-
-        for item in items:
-            detail_url, attachments = fetch_detail(
-                browser, item["tab"], item["page_num"], item["title"]
-            )
-            item["detail_url"] = detail_url
-            item["attachments"] = attachments
-
         browser.close()
 
     return items
