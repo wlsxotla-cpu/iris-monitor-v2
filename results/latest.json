@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20 15:54 KST",
+  "updated_at": "2026-07-20 16:10 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -16,7 +16,7 @@
       "status": "공고예고",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022877','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -30,7 +30,7 @@
       "status": "공고예고",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -44,7 +44,7 @@
       "status": "공고예고",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022857','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -58,7 +58,7 @@
       "status": "공고예고",
       "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022717','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -72,7 +72,7 @@
       "status": "공고예고",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -86,7 +86,7 @@
       "status": "공고예고",
       "type": "자유공모,지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('018400','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -100,7 +100,7 @@
       "status": "공고예고",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022877','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -114,7 +114,7 @@
       "status": "공고예고",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -128,7 +128,7 @@
       "status": "공고예고",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022857','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -142,7 +142,7 @@
       "status": "공고예고",
       "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022717','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -156,7 +156,7 @@
       "status": "공고예고",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -170,7 +170,7 @@
       "status": "공고예고",
       "type": "자유공모,지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('018400','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -184,7 +184,7 @@
       "status": "공고마감,공고예고",
       "type": "분야공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('006454','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -198,7 +198,7 @@
       "status": "공고예고",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('006134','ancmPre'); return false;",
       "attachments": []
     },
     {
@@ -212,7 +212,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023097','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -226,7 +226,7 @@
       "status": "공고접수중",
       "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023017','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -240,7 +240,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022997','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -254,7 +254,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -268,7 +268,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023018','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -282,7 +282,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022977','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -296,7 +296,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022757','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -310,7 +310,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022737','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -324,7 +324,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -338,7 +338,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022456','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -352,7 +352,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023097','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -366,7 +366,7 @@
       "status": "공고접수중",
       "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023017','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -380,7 +380,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022997','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -394,7 +394,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -408,7 +408,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023018','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -422,7 +422,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022977','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -436,7 +436,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022757','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -450,7 +450,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022737','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -464,7 +464,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -478,7 +478,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022456','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -492,7 +492,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022696','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -506,7 +506,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022694','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -520,7 +520,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022634','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -534,7 +534,7 @@
       "status": "공고접수중",
       "type": "지정공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022615','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -548,7 +548,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022614','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -562,7 +562,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022515','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -576,7 +576,7 @@
       "status": "공고접수중",
       "type": "분야공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022514','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -590,7 +590,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022294','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -604,7 +604,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022235','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -618,7 +618,7 @@
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022575','ancmIng'); return false;",
       "attachments": []
     }
   ]
