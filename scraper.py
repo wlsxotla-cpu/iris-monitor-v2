@@ -134,33 +134,48 @@ def collect_list(page):
 
 def extract_links_by_title(page, items):
     """상세페이지를 따로 방문하지 않고, 지금 보이는 목록 페이지에서
-    제목 텍스트와 일치하는 링크의 href만 바로 추출한다."""
+    제목 텍스트와 일치하는 요소의 href/onclick을 바로 추출한다."""
     try:
-        anchors = page.query_selector_all("a")
+        # <a> 태그뿐 아니라 onclick만 갖고 href가 없는 경우도 있어서
+        # 텍스트가 일치하는 아무 요소나 찾아 href/onclick을 함께 수집한다.
+        rows = page.evaluate(
+            """
+            () => {
+                const out = [];
+                const all = document.querySelectorAll('a, li, div, span');
+                for (const el of all) {
+                    const text = (el.textContent || '').trim();
+                    if (!text) continue;
+                    const href = el.getAttribute && el.getAttribute('href');
+                    const onclick = el.getAttribute && el.getAttribute('onclick');
+                    if (href || onclick) {
+                        out.push({text, href, onclick});
+                    }
+                }
+                return out;
+            }
+            """
+        )
     except Exception as e:
         print(f"[warn] 링크 추출 실패: {e}", file=sys.stderr)
         return
 
-    title_to_href = {}
-    for a in anchors:
-        try:
-            text = (a.inner_text() or "").strip()
-            href = a.get_attribute("href")
-        except Exception:
-            continue
-        if text and href:
-            title_to_href[text] = href
+    by_text = {}
+    for r in rows:
+        by_text.setdefault(r["text"], r)
 
     for item in items:
-        href = title_to_href.get(item["title"])
-        if not href:
+        r = by_text.get(item["title"])
+        if not r:
             continue
-        if href.startswith("javascript"):
-            # 자바스크립트 링크라 그대로는 못 쓴다. 원본은 남겨두고
-            # detail_url은 비워둔다 (패턴이 확인되면 나중에 채울 수 있음).
-            item["raw_link"] = href
-        else:
+        href = r.get("href")
+        onclick = r.get("onclick")
+        if href and not href.startswith("javascript") and href != "#":
             item["detail_url"] = href
+        if onclick:
+            item["raw_link"] = onclick
+        elif href:
+            item["raw_link"] = href
 
 
 def scrape():
