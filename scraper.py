@@ -180,11 +180,22 @@ def render_markdown(items):
 
 
 if __name__ == "__main__":
+    import json
+
     items = scrape()
     md = render_markdown(items)
 
     os.makedirs("results", exist_ok=True)
     with open("results/latest.md", "w", encoding="utf-8") as f:
         f.write(md)
+
+    payload = {
+        "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"),
+        "departments": DEPARTMENTS,
+        "tabs": TABS,
+        "items": items,
+    }
+    with open("results/latest.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
     print(f"총 {len(items)}건 저장 완료")
