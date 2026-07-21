@@ -178,6 +178,83 @@ def extract_links_by_title(page, items):
             item["raw_link"] = href
 
 
+CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
+
+
+def parse_onclick_args(onclick: str):
+    """f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); 같은 문자열에서
+    함수명과 인자 목록(따옴표 벗긴 값)을 뽑아낸다."""
+    if not onclick:
+        return None, []
+    m = CALL_PATTERN.match(onclick.strip())
+    if not m:
+        return None, []
+    func_name = m.group(1)
+    raw_args = m.group(2)
+    args = [a.strip().strip("'").strip('"') for a in raw_args.split(",") if a.strip()]
+    return func_name, args
+
+
+def resolve_url_template(browser, sample_item):
+    """항목 하나만 실제로 클릭해서 이동하는 URL을 확인하고, 그 인자값이
+    URL 안에 그대로 들어있으면 나머지 항목에도 재사용할 수 있는 템플릿을
+    만든다. 못 찾으면 None을 반환한다."""
+    func_name, args = parse_onclick_args(sample_item.get("raw_link"))
+    if not args:
+        return None, func_name
+
+    page = browser.new_page()
+    template = None
+    try:
+        page.goto(URL, wait_until="networkidle")
+        page.get_by_text(sample_item["tab"], exact=True).first.click()
+        page.wait_for_timeout(800)
+        click_search(page)
+        for p in range(2, sample_item.get("page_num", 1) + 1):
+            page.get_by_text(str(p), exact=True).first.click()
+            page.wait_for_timeout(1000)
+
+        target = page.get_by_text(sample_item["title"], exact=True).first
+        resolved_url = None
+        try:
+            with page.context.expect_page(timeout=4000) as popup_info:
+                target.click()
+            new_page = popup_info.value
+            new_page.wait_for_load_state("networkidle")
+            resolved_url = new_page.url
+            new_page.close()
+        except Exception:
+            target.click()
+            page.wait_for_timeout(1500)
+            resolved_url = page.url
+
+        if resolved_url and all(a in resolved_url for a in args):
+            template = resolved_url
+            for i, a in enumerate(args):
+                template = template.replace(a, f"{{arg{i}}}")
+    except Exception as e:
+        print(f"[warn] URL 패턴 확인 실패: {e}", file=sys.stderr)
+    finally:
+        page.close()
+
+    return template, func_name
+
+
+def apply_url_template(items, template, func_name):
+    if not template:
+        return
+    for item in items:
+        if item.get("detail_url"):
+            continue
+        f, args = parse_onclick_args(item.get("raw_link"))
+        if f != func_name or not args:
+            continue
+        try:
+            item["detail_url"] = template.format(**{f"arg{i}": a for i, a in enumerate(args)})
+        except Exception:
+            pass
+
+
 def scrape():
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -185,6 +262,12 @@ def scrape():
         page.goto(URL, wait_until="networkidle")
         items = collect_list(page)
         page.close()
+
+        sample = next((i for i in items if i.get("raw_link") and not i.get("detail_url")), None)
+        if sample:
+            template, func_name = resolve_url_template(browser, sample)
+            apply_url_template(items, template, func_name)
+
         browser.close()
 
     return items
