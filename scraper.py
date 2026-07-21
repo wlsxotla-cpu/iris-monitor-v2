@@ -63,27 +63,14 @@ BASE_PAYLOAD = {
 
 KST = timezone(timedelta(hours=9))
 
-KNOWN_ORGS = [
-    "범부처", "과학기술정보통신부", "산업통상부", "중소벤처기업부", "국토교통부",
-    "교육부", "기상청", "농림축산식품부", "농촌진흥청", "국가유산청",
-    "문화체육관광부", "방위사업청", "보건복지부", "산림청", "식품의약품안전처",
-    "원자력안전위원회", "해양수산부", "행정안전부", "기후에너지환경부", "법무부",
-    "국방부", "고용노동부", "경찰청", "재정경제부", "소방청", "해양경찰청",
-    "관세청", "조달청", "질병관리청", "개인정보보호위원회", "국민안전처",
-    "대통령경호처", "우주항공청", "방송미디어통신위원회", "고준위 방사성폐기물 관리위원회",
-    "다부처",
-]
-_ORG_ALT = "|".join(sorted((re.escape(o) for o in KNOWN_ORGS), key=len, reverse=True))
-
 ITEM_PATTERN = re.compile(
-    r"(?P<org>" + _ORG_ALT + r")\s*>\s*(?P<agency>[^\n]+?)\s*\n+"
-    r"\s*(?P<title>[^\n]+?)\s*\n+"
-    r"\s*공고번호\s*:\s*(?P<ancm_no>[^\n]*?)\s*"
+    r"공고번호\s*:\s*(?P<ancm_no>.*?)\s*"
     r"공고일자\s*:\s*(?P<ancm_date>[\d\-]+)\s*"
-    r"공고상태\s*:\s*(?P<status>[^\n]*?)\s*"
-    r"공모유형\s*:\s*(?P<type>[^\n]+?)\s*\n",
-    re.MULTILINE,
+    r"공고상태\s*:\s*(?P<status>.*?)\s*"
+    r"공모유형\s*:\s*(?P<type>.+?)\s*$"
 )
+
+MAX_PAGES = 10  # 안전장치: 페이지 수 파싱이 잘못되더라도 무한히 돌지 않도록 상한선
 
 CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
 
@@ -105,52 +92,76 @@ def get_total_pages(page_text: str) -> int:
     return int(m.group(1)) if m else 1
 
 
-def parse_items(page_text: str, tab: str, page_num: int):
+def _find_item_container(text_node):
+    """'공고번호 :' 텍스트가 들어있는 위치에서 위로 올라가며, 링크(<a>)를
+    포함하고 너무 크지 않은 조상 요소를 항목 컨테이너로 삼는다."""
+    node = text_node.parent
+    for _ in range(8):
+        if node is None:
+            break
+        if node.find("a") is not None:
+            full = node.get_text(" ", strip=True)
+            if len(full) < 3000:
+                return node
+        node = node.parent
+    return text_node.parent
+
+
+def _text_before_tag(container, stop_tag):
+    """container 안에서 stop_tag(제목 링크)가 나오기 전까지의 텍스트만 모은다."""
+    parts = []
+    for desc in container.descendants:
+        if isinstance(desc, str):
+            if stop_tag is not None and any(anc is stop_tag for anc in desc.parents):
+                break
+            if desc.strip():
+                parts.append(desc.strip())
+    return " ".join(parts)
+
+
+def parse_items(soup: BeautifulSoup, tab: str, page_num: int):
     items = []
-    for m in ITEM_PATTERN.finditer(page_text):
-        items.append(
-            {
-                "tab": tab,
-                "page_num": page_num,
-                "org": m.group("org").strip(),
-                "agency": m.group("agency").strip(),
-                "title": m.group("title").strip(),
-                "ancm_no": m.group("ancm_no").strip(),
-                "ancm_date": m.group("ancm_date").strip(),
-                "status": m.group("status").strip(),
-                "type": m.group("type").strip(),
-                "detail_url": None,
-                "raw_link": None,
-                "attachments": [],
-            }
-        )
+    seen_ids = set()
+
+    for text_node in soup.find_all(string=re.compile("공고번호")):
+        container = _find_item_container(text_node)
+        if container is None or id(container) in seen_ids:
+            continue
+        seen_ids.add(id(container))
+
+        full_text = container.get_text(" ", strip=True)
+        m = ITEM_PATTERN.search(full_text)
+        if not m:
+            continue
+
+        link_tag = container.find("a")
+        title = link_tag.get_text(strip=True) if link_tag else ""
+        before_text = _text_before_tag(container, link_tag)
+        org, agency = "", ""
+        if ">" in before_text:
+            org, _, agency = before_text.partition(">")
+            org, agency = org.strip(), agency.strip()
+
+        href = link_tag.get("href") if link_tag else None
+        onclick = link_tag.get("onclick") if link_tag else None
+
+        item = {
+            "tab": tab,
+            "page_num": page_num,
+            "org": org,
+            "agency": agency,
+            "title": title,
+            "ancm_no": m.group("ancm_no").strip(),
+            "ancm_date": m.group("ancm_date").strip(),
+            "status": m.group("status").strip(),
+            "type": m.group("type").strip(),
+            "detail_url": href if href and not href.startswith("javascript") and href != "#" else None,
+            "raw_link": onclick or (href if href else None),
+            "attachments": [],
+        }
+        items.append(item)
+
     return items
-
-
-def attach_links(soup: BeautifulSoup, items):
-    """응답 HTML에서 제목 텍스트와 일치하는 링크의 href/onclick을 붙인다."""
-    by_text = {}
-    for a in soup.find_all("a"):
-        text = a.get_text(strip=True)
-        if not text:
-            continue
-        href = a.get("href")
-        onclick = a.get("onclick")
-        if href or onclick:
-            by_text.setdefault(text, {"href": href, "onclick": onclick})
-
-    for item in items:
-        r = by_text.get(item["title"])
-        if not r:
-            continue
-        href = r.get("href")
-        onclick = r.get("onclick")
-        if href and not href.startswith("javascript") and href != "#":
-            item["detail_url"] = href
-        if onclick:
-            item["raw_link"] = onclick
-        elif href:
-            item["raw_link"] = href
 
 
 def fetch_page(session, ancm_prg: str, page_index: int):
@@ -175,6 +186,7 @@ def scrape():
 
     for tab, code in TAB_CODES.items():
         page_index = 1
+        empty_streak = 0
         while True:
             try:
                 html = fetch_page(session, code, page_index)
@@ -186,14 +198,17 @@ def scrape():
             page_text = soup.get_text("\n")
 
             total_pages = get_total_pages(page_text)
-            page_items = parse_items(page_text, tab, page_index)
-            attach_links(soup, page_items)
+            page_items = parse_items(soup, tab, page_index)
             all_items.extend(page_items)
 
             if not page_items:
+                empty_streak += 1
                 print(f"[warn] {tab} 페이지 {page_index}: 파싱된 항목 0건", file=sys.stderr)
+            else:
+                empty_streak = 0
 
-            if page_index >= total_pages:
+            # 안전장치: 전체 페이지 수를 잘못 읽었거나 빈 페이지가 계속되면 중단
+            if page_index >= total_pages or page_index >= MAX_PAGES or empty_streak >= 2:
                 break
             page_index += 1
 
