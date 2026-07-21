@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21 10:35 KST",
+  "updated_at": "2026-07-21 10:48 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -17,7 +17,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022877','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022877",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -31,7 +33,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022957",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -45,7 +49,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022857','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022857",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -59,7 +65,9 @@
       "type": "품목지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022717','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022717",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -73,7 +81,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022074','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022074",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -87,7 +97,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('021774','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "021774",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -101,7 +113,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('020938','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "020938",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -115,7 +129,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "020160",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -129,7 +145,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('019314','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "019314",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -143,7 +161,9 @@
       "type": "자유공모,지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('018400','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "018400",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -157,7 +177,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017155','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "017155",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -171,7 +193,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('016854','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "016854",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -185,7 +209,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('014078','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "014078",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -199,7 +225,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('013358','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "013358",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -213,7 +241,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('012636','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "012636",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -227,7 +257,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('012635','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "012635",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -241,7 +273,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('010280','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "010280",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -255,7 +289,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11832','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11832",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -269,7 +305,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('007615','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "007615",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -283,7 +321,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('007275','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "007275",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -297,7 +337,9 @@
       "type": "분야공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('006454','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "006454",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -311,7 +353,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11816','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11816",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -325,7 +369,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('006375','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "006375",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -339,7 +385,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11815','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11815",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -353,7 +401,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('006134','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "006134",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -367,7 +417,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2665','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2665",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -381,7 +433,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11814','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11814",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -395,7 +449,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2664','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2664",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -409,7 +465,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('005439','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "005439",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -423,7 +481,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2663','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2663",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -437,7 +497,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2661','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2661",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -451,7 +513,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2662','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2662",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -465,7 +529,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11500','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11500",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -479,7 +545,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11768','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11768",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -493,7 +561,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11767','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11767",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -507,7 +577,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11766','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11766",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -521,7 +593,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2658','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2658",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -535,7 +609,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11748','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11748",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -549,7 +625,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11747','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11747",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -563,7 +641,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11547','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11547",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -577,7 +657,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11286','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11286",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -591,7 +673,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11330','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11330",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -605,7 +689,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11639','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11639",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -619,7 +705,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11264','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11264",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -633,7 +721,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2660','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2660",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -647,7 +737,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2659','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2659",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -661,7 +753,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2657','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2657",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -675,7 +769,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11752','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11752",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -689,7 +785,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11751','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11751",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -703,7 +801,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11288','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11288",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -717,7 +817,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('003919','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "003919",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -731,7 +833,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11496','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11496",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -745,7 +849,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11495','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11495",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -759,7 +865,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11673','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11673",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -773,7 +881,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11672','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11672",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -787,7 +897,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11671','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11671",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -801,7 +913,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11670','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11670",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -815,7 +929,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11667','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11667",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -829,7 +945,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11666','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11666",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -843,7 +961,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11664','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11664",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -857,7 +977,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11663','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11663",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -871,7 +993,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11662','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11662",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -885,7 +1009,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11545','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11545",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -899,7 +1025,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11462','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11462",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -913,7 +1041,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11276','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11276",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -927,7 +1057,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11242','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11242",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -941,7 +1073,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11135','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11135",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -955,7 +1089,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2656','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2656",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -969,7 +1105,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11506','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11506",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -983,7 +1121,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11504','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11504",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -997,7 +1137,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11503','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11503",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1011,7 +1153,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11502','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11502",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1025,7 +1169,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11501','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11501",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1039,7 +1185,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11499','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11499",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1053,7 +1201,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('TI2652','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "TI2652",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1067,7 +1217,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11723','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11723",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1081,7 +1233,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11722','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11722",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1095,7 +1249,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11701','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11701",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1109,7 +1265,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11626','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11626",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1123,7 +1281,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11625','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11625",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1137,7 +1297,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11622','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11622",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1151,7 +1313,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11621','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11621",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1165,7 +1329,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11620','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11620",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1179,7 +1345,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11619','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11619",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1193,7 +1361,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11618','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11618",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1207,7 +1377,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11617','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11617",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1221,7 +1393,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11616','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11616",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1235,7 +1409,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11615','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11615",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1249,7 +1425,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11614','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11614",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1263,7 +1441,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11544','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11544",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1277,7 +1457,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11543','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11543",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1291,7 +1473,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11542','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11542",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1305,7 +1489,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11541','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11541",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1319,7 +1505,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11540','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11540",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1333,7 +1521,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11539','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11539",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1347,7 +1537,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11538','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11538",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1361,7 +1553,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11537','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11537",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1375,7 +1569,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11536','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11536",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1389,7 +1585,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11535','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11535",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수예정",
@@ -1403,7 +1601,9 @@
       "type": "미등록",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('N11534','ancmPre'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "N11534",
+      "ancm_prg": "ancmPre"
     },
     {
       "tab": "접수중",
@@ -1417,7 +1617,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023097','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "023097",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1431,7 +1633,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022997','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022997",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1445,7 +1649,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "019508",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1459,7 +1665,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023018','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "023018",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1473,7 +1681,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022977','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022977",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1487,7 +1697,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022757','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022757",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1501,7 +1713,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022737','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022737",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1515,7 +1729,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022695",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1529,7 +1745,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022456','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022456",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1543,7 +1761,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022696','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022696",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1557,7 +1777,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022694','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022694",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1571,7 +1793,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022634','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022634",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1585,7 +1809,9 @@
       "type": "지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022615','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022615",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1599,7 +1825,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022614','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022614",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1613,7 +1841,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022515','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022515",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1627,7 +1857,9 @@
       "type": "분야공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022514','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022514",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1641,7 +1873,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022294','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022294",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1655,7 +1889,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022235','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022235",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1669,7 +1905,9 @@
       "type": "정책지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022455','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022455",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1683,7 +1921,9 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022534','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "022534",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -1697,7 +1937,9 @@
       "type": "자유공모,정책지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
-      "attachments": []
+      "attachments": [],
+      "ancm_id": "017852",
+      "ancm_prg": "ancmIng"
     }
   ]
 }
