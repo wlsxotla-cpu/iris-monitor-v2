@@ -63,13 +63,6 @@ BASE_PAYLOAD = {
 
 KST = timezone(timedelta(hours=9))
 
-ITEM_PATTERN = re.compile(
-    r"공고번호\s*:\s*(?P<ancm_no>.*?)\s*"
-    r"공고일자\s*:\s*(?P<ancm_date>[\d\-]+)\s*"
-    r"공고상태\s*:\s*(?P<status>.*?)\s*"
-    r"공모유형\s*:\s*(?P<type>.+?)\s*$"
-)
-
 MAX_PAGES = 10  # 안전장치: 페이지 수 파싱이 잘못되더라도 무한히 돌지 않도록 상한선
 
 CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
@@ -92,74 +85,71 @@ def get_total_pages(page_text: str) -> int:
     return int(m.group(1)) if m else 1
 
 
-def _find_item_container(text_node):
-    """'공고번호 :' 텍스트가 들어있는 위치에서 위로 올라가며, 링크(<a>)를
-    포함하고 너무 크지 않은 조상 요소를 항목 컨테이너로 삼는다."""
-    node = text_node.parent
-    for _ in range(8):
-        if node is None:
-            break
-        if node.find("a") is not None:
-            full = node.get_text(" ", strip=True)
-            if len(full) < 3000:
-                return node
-        node = node.parent
-    return text_node.parent
-
-
-def _text_before_tag(container, stop_tag):
-    """container 안에서 stop_tag(제목 링크)가 나오기 전까지의 텍스트만 모은다."""
-    parts = []
-    for desc in container.descendants:
-        if isinstance(desc, str):
-            if stop_tag is not None and any(anc is stop_tag for anc in desc.parents):
-                break
-            if desc.strip():
-                parts.append(desc.strip())
-    return " ".join(parts)
-
-
 def parse_items(soup: BeautifulSoup, tab: str, page_num: int):
+    """실제 li 구조에 맞춰 정확하게 파싱한다.
+
+    <li>
+      <span class="inst_title">부처 > 전문기관</span>
+      <div class="form-row">
+        <div class="group1">
+          <strong class="title"><a onclick="...">제목</a></strong>
+          <div class="etc_info">
+            <span><em>공고번호 :</em>값</span>
+            <span class="ancmDe"><em>공고일자 :</em>값</span>
+            <span class="rcveSttSeNmLst"><em>공고상태 :</em>값</span>
+            <span class="pbofrTpSeNmLst"><em>공모유형 :</em>값</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    """
     items = []
-    seen_ids = set()
 
-    for text_node in soup.find_all(string=re.compile("공고번호")):
-        container = _find_item_container(text_node)
-        if container is None or id(container) in seen_ids:
-            continue
-        seen_ids.add(id(container))
-
-        full_text = container.get_text(" ", strip=True)
-        m = ITEM_PATTERN.search(full_text)
-        if not m:
+    for li in soup.find_all("li"):
+        inst = li.find("span", class_="inst_title")
+        link = li.select_one("strong.title a")
+        etc = li.find("div", class_="etc_info")
+        if not inst or not link or not etc:
             continue
 
-        link_tag = container.find("a")
-        title = link_tag.get_text(strip=True) if link_tag else ""
-        before_text = _text_before_tag(container, link_tag)
-        org, agency = "", ""
-        if ">" in before_text:
-            org, _, agency = before_text.partition(">")
-            org, agency = org.strip(), agency.strip()
+        org, _, agency = inst.get_text(strip=True).partition(">")
+        org, agency = org.strip(), agency.strip()
 
-        href = link_tag.get("href") if link_tag else None
-        onclick = link_tag.get("onclick") if link_tag else None
+        title = link.get_text(strip=True)
+        href = link.get("href")
+        onclick = link.get("onclick")
 
-        item = {
-            "tab": tab,
-            "page_num": page_num,
-            "org": org,
-            "agency": agency,
-            "title": title,
-            "ancm_no": m.group("ancm_no").strip(),
-            "ancm_date": m.group("ancm_date").strip(),
-            "status": m.group("status").strip(),
-            "type": m.group("type").strip(),
-            "detail_url": href if href and not href.startswith("javascript") and href != "#" else None,
-            "raw_link": onclick or (href if href else None),
-            "attachments": [],
-        }
-        items.append(item)
+        fields = {}
+        for span in etc.find_all("span"):
+            em = span.find("em")
+            if not em:
+                continue
+            label = em.get_text(strip=True)
+            value = span.get_text(strip=True)[len(em.get_text(strip=True)):].strip()
+            fields[label] = value
+
+        def get_field(*keywords):
+            for label, value in fields.items():
+                if all(k in label for k in keywords):
+                    return value
+            return ""
+
+        items.append(
+            {
+                "tab": tab,
+                "page_num": page_num,
+                "org": org,
+                "agency": agency,
+                "title": title,
+                "ancm_no": get_field("공고번호"),
+                "ancm_date": get_field("공고일자"),
+                "status": get_field("공고상태"),
+                "type": get_field("공모유형"),
+                "detail_url": href if href and not href.startswith("javascript") and href.strip() not in ("", "#") else None,
+                "raw_link": onclick or (href if href else None),
+                "attachments": [],
+            }
+        )
 
     return items
 
@@ -172,6 +162,83 @@ def fetch_page(session, ancm_prg: str, page_index: int):
     resp.raise_for_status()
     resp.encoding = resp.encoding or "utf-8"
     return resp.text
+
+
+def resolve_detail_url_template(items):
+    """항목 하나만 실제 브라우저로 클릭해서 진짜 이동 URL을 확인하고,
+    onclick 인자값이 그 URL 안에 그대로 들어있으면 재사용 가능한 템플릿을
+    만든다. 전체 스크래핑에는 브라우저를 쓰지 않고, 이 한 번의 확인에만
+    사용한다 (속도 영향 최소화)."""
+    sample = next(
+        (i for i in items if i.get("raw_link") and i.get("page_num") == 1),
+        None,
+    )
+    if not sample:
+        return None, None
+
+    func_name, args = parse_onclick_args(sample["raw_link"])
+    if not args:
+        return None, None
+
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        print(f"[warn] playwright 사용 불가 - 상세링크 확인 건너뜀 ({e})", file=sys.stderr)
+        return None, None
+
+    template = None
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.goto(URL, wait_until="networkidle")
+            try:
+                page.get_by_text(sample["tab"], exact=True).first.click()
+                page.wait_for_timeout(1000)
+            except Exception as e:
+                print(f"[warn] 탭 클릭 실패: {e}", file=sys.stderr)
+
+            target = page.get_by_text(sample["title"], exact=True).first
+            resolved_url = None
+            try:
+                with page.context.expect_page(timeout=4000) as popup_info:
+                    target.click()
+                new_page = popup_info.value
+                new_page.wait_for_load_state("networkidle")
+                resolved_url = new_page.url
+                new_page.close()
+            except Exception:
+                target.click()
+                page.wait_for_timeout(1500)
+                resolved_url = page.url
+
+            if resolved_url and all(a in resolved_url for a in args):
+                template = resolved_url
+                for i, a in enumerate(args):
+                    template = template.replace(a, f"{{arg{i}}}")
+            else:
+                print(f"[warn] URL 안에 인자값이 없음: {resolved_url}", file=sys.stderr)
+
+            browser.close()
+    except Exception as e:
+        print(f"[warn] 상세 URL 패턴 확인 실패: {e}", file=sys.stderr)
+
+    return template, func_name
+
+
+def apply_detail_url_template(items, template, func_name):
+    if not template:
+        return
+    for item in items:
+        if item.get("detail_url"):
+            continue
+        f, args = parse_onclick_args(item.get("raw_link"))
+        if f != func_name or not args:
+            continue
+        try:
+            item["detail_url"] = template.format(**{f"arg{i}": a for i, a in enumerate(args)})
+        except Exception:
+            pass
 
 
 def scrape():
@@ -211,6 +278,9 @@ def scrape():
             if page_index >= total_pages or page_index >= MAX_PAGES or empty_streak >= 2:
                 break
             page_index += 1
+
+    template, func_name = resolve_detail_url_template(all_items)
+    apply_detail_url_template(all_items, template, func_name)
 
     return all_items
 
