@@ -164,81 +164,18 @@ def fetch_page(session, ancm_prg: str, page_index: int):
     return resp.text
 
 
-def resolve_detail_url_template(items):
-    """항목 하나만 실제 브라우저로 클릭해서 진짜 이동 URL을 확인하고,
-    onclick 인자값이 그 URL 안에 그대로 들어있으면 재사용 가능한 템플릿을
-    만든다. 전체 스크래핑에는 브라우저를 쓰지 않고, 이 한 번의 확인에만
-    사용한다 (속도 영향 최소화)."""
-    sample = next(
-        (i for i in items if i.get("raw_link") and i.get("page_num") == 1),
-        None,
-    )
-    if not sample:
-        return None, None
-
-    func_name, args = parse_onclick_args(sample["raw_link"])
-    if not args:
-        return None, None
-
-    try:
-        from playwright.sync_api import sync_playwright
-    except Exception as e:
-        print(f"[warn] playwright 사용 불가 - 상세링크 확인 건너뜀 ({e})", file=sys.stderr)
-        return None, None
-
-    template = None
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            page = browser.new_page()
-            page.goto(URL, wait_until="networkidle")
-            try:
-                page.get_by_text(sample["tab"], exact=True).first.click()
-                page.wait_for_timeout(1000)
-            except Exception as e:
-                print(f"[warn] 탭 클릭 실패: {e}", file=sys.stderr)
-
-            target = page.get_by_text(sample["title"], exact=True).first
-            resolved_url = None
-            try:
-                with page.context.expect_page(timeout=4000) as popup_info:
-                    target.click()
-                new_page = popup_info.value
-                new_page.wait_for_load_state("networkidle")
-                resolved_url = new_page.url
-                new_page.close()
-            except Exception:
-                target.click()
-                page.wait_for_timeout(1500)
-                resolved_url = page.url
-
-            if resolved_url and all(a in resolved_url for a in args):
-                template = resolved_url
-                for i, a in enumerate(args):
-                    template = template.replace(a, f"{{arg{i}}}")
-            else:
-                print(f"[warn] URL 안에 인자값이 없음: {resolved_url}", file=sys.stderr)
-
-            browser.close()
-    except Exception as e:
-        print(f"[warn] 상세 URL 패턴 확인 실패: {e}", file=sys.stderr)
-
-    return template, func_name
-
-
-def apply_detail_url_template(items, template, func_name):
-    if not template:
-        return
+def resolve_detail_form_fields(items):
+    """onclick 인자(ancmId, ancmPrg)를 각 항목에 붙인다.
+    실제 상세페이지는 이 값들로 폼을 POST 제출해야 열리므로, 여기서는
+    URL을 만들지 않고 폼 제출에 필요한 값만 남겨둔다 (대시보드에서 처리)."""
     for item in items:
-        if item.get("detail_url"):
-            continue
-        f, args = parse_onclick_args(item.get("raw_link"))
-        if f != func_name or not args:
-            continue
-        try:
-            item["detail_url"] = template.format(**{f"arg{i}": a for i, a in enumerate(args)})
-        except Exception:
-            pass
+        func_name, args = parse_onclick_args(item.get("raw_link"))
+        if len(args) >= 2:
+            item["ancm_id"] = args[0]
+            item["ancm_prg"] = args[1]
+        else:
+            item["ancm_id"] = None
+            item["ancm_prg"] = None
 
 
 def scrape():
@@ -279,8 +216,7 @@ def scrape():
                 break
             page_index += 1
 
-    template, func_name = resolve_detail_url_template(all_items)
-    apply_detail_url_template(all_items, template, func_name)
+    resolve_detail_form_fields(all_items)
 
     return all_items
 
