@@ -63,7 +63,7 @@ BASE_PAYLOAD = {
 
 KST = timezone(timedelta(hours=9))
 
-MAX_PAGES = 10  # 안전장치: 페이지 수 파싱이 잘못되더라도 무한히 돌지 않도록 상한선
+MAX_PAGES = 60  # 안전장치: 전체 부처를 다 가져오면 페이지가 많아지므로 넉넉하게 잡는다
 
 CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
 
