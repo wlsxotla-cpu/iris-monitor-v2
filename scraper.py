@@ -1,268 +1,188 @@
 """
-IRIS(범부처통합연구지원시스템) 사업공고 스크래퍼 (requests 기반, 브라우저 미사용)
+IRIS 공고 현황 대시보드 (Streamlit)
 
-- https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do 에
-  실제 브라우저가 보내는 것과 같은 POST 요청을 그대로 보내서 목록 HTML을
-  받아와 파싱한다. (Playwright/헤드리스 브라우저를 쓰지 않아 훨씬 빠르다)
-- 전체 소관부처 기준으로 "접수예정" / "접수중" 데이터를 모두 가져온다.
-  부처 필터링은 여기서 하지 않고, 어떤 부처를 볼지는 대시보드(Streamlit)에서
-  사용자가 직접 고른다.
-- 이전 결과와 비교하는 로직은 없다 (매번 전체 현재 목록을 그대로 저장).
-
-주의:
-  이 요청 방식(POST + 페이로드)은 사용자가 브라우저 개발자도구에서 직접
-  확인해서 알려준 내용을 기반으로 만든 1차 버전입니다. 세션/쿠키가 추가로
-  필요하거나, 응답 구조가 예상과 달라 파싱이 실패할 수 있습니다. 그런
-  경우 Actions 로그를 공유해주시면 바로 수정하겠습니다.
+GitHub의 wlsxotla-cpu/iris-monitor-v2 리포지토리에서 GitHub Actions가
+매일 만들어두는 results/latest.json 을 읽어서 카드 형태로 보여준다.
+이 앱 자체는 IRIS 사이트에 접속하지 않으므로, 예전처럼 Streamlit Cloud가
+IRIS 쪽에서 IP 차단을 당하는 문제가 생기지 않는다.
 """
 
-import json
-import os
-import re
-import sys
-from datetime import datetime, timezone, timedelta
-
+import pandas as pd
 import requests
-from bs4 import BeautifulSoup
+import streamlit as st
 
-URL = "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do"
+RAW_JSON_URL = (
+    "https://raw.githubusercontent.com/wlsxotla-cpu/iris-monitor-v2/main/results/latest.json"
+)
 
-# "접수예정"=ancmPre, "접수중"=ancmIng, "마감"=ancmEnd
-TAB_CODES = {
-    "접수예정": "ancmPre",
-    "접수중": "ancmIng",
-}
+DETAIL_URL = "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do"
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    ),
-}
+FORM_FIELDS = [
+    "bizSearch", "bsnsTl", "ancmPrg", "pageIndex", "ancmId", "ancmNo",
+    "ancmTurn", "seq", "hirkSorgnBsnsCd", "bsnsAncmTap", "shSorgnYyBsnsCd",
+    "sorgnIdArr", "ancmSttArr", "pbofrTpArr", "qualCndtArr", "blngGovdSeArr",
+    "techFildArr", "shBsnsYy",
+]
 
-BASE_PAYLOAD = {
-    "bizSearch": "",
-    "bsnsTl": "",
-    "ancmPrg": "",
-    "pageIndex": "1",
-    "ancmId": "",
-    "ancmNo": "",
-    "ancmTurn": "",
-    "seq": "",
-    "hirkSorgnBsnsCd": "",
-    "bsnsAncmTap": "",
-    "shSorgnYyBsnsCd": "",
-    "sorgnIdArr": "",
-    "ancmSttArr": "",
-    "pbofrTpArr": "",
-    "qualCndtArr": "",
-    "blngGovdSeArr": "",
-    "techFildArr": "",
-    "shBsnsYy": "",
-}
+st.set_page_config(page_title="IRIS 공고 현황", layout="wide")
 
-KST = timezone(timedelta(hours=9))
-
-MAX_PAGES = 60  # 안전장치: 전체 부처를 다 가져오면 페이지가 많아지므로 넉넉하게 잡는다
-
-CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
-
-
-def parse_onclick_args(onclick: str):
-    if not onclick:
-        return None, []
-    m = CALL_PATTERN.match(onclick.strip())
-    if not m:
-        return None, []
-    func_name = m.group(1)
-    raw_args = m.group(2)
-    args = [a.strip().strip("'").strip('"') for a in raw_args.split(",") if a.strip()]
-    return func_name, args
-
-
-def get_total_pages(page_text: str) -> int:
-    m = re.search(r"현재\s*페이지\s*\d+\s*/\s*(\d+)", page_text)
-    return int(m.group(1)) if m else 1
-
-
-def parse_items(soup: BeautifulSoup, tab: str, page_num: int):
-    """실제 li 구조에 맞춰 정확하게 파싱한다.
-
-    <li>
-      <span class="inst_title">부처 > 전문기관</span>
-      <div class="form-row">
-        <div class="group1">
-          <strong class="title"><a onclick="...">제목</a></strong>
-          <div class="etc_info">
-            <span><em>공고번호 :</em>값</span>
-            <span class="ancmDe"><em>공고일자 :</em>값</span>
-            <span class="rcveSttSeNmLst"><em>공고상태 :</em>값</span>
-            <span class="pbofrTpSeNmLst"><em>공모유형 :</em>값</span>
-          </div>
-        </div>
-      </div>
-    </li>
+st.markdown(
     """
-    items = []
-
-    for li in soup.find_all("li"):
-        inst = li.find("span", class_="inst_title")
-        link = li.select_one("strong.title a")
-        etc = li.find("div", class_="etc_info")
-        if not inst or not link or not etc:
-            continue
-
-        org, _, agency = inst.get_text(strip=True).partition(">")
-        org, agency = org.strip(), agency.strip()
-
-        title = link.get_text(strip=True)
-        href = link.get("href")
-        onclick = link.get("onclick")
-
-        fields = {}
-        for span in etc.find_all("span"):
-            em = span.find("em")
-            if not em:
-                continue
-            label = em.get_text(strip=True)
-            value = span.get_text(strip=True)[len(em.get_text(strip=True)):].strip()
-            fields[label] = value
-
-        def get_field(*keywords):
-            for label, value in fields.items():
-                if all(k in label for k in keywords):
-                    return value
-            return ""
-
-        items.append(
-            {
-                "tab": tab,
-                "page_num": page_num,
-                "org": org,
-                "agency": agency,
-                "title": title,
-                "ancm_no": get_field("공고번호"),
-                "ancm_date": get_field("공고일자"),
-                "status": get_field("공고상태"),
-                "type": get_field("공모유형"),
-                "detail_url": href if href and not href.startswith("javascript") and href.strip() not in ("", "#") else None,
-                "raw_link": onclick or (href if href else None),
-                "attachments": [],
-            }
-        )
-
-    return items
-
-
-def fetch_page(session, ancm_prg: str, page_index: int):
-    payload = dict(BASE_PAYLOAD)
-    payload["ancmPrg"] = ancm_prg
-    payload["pageIndex"] = str(page_index)
-    resp = session.post(URL, data=payload, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    resp.encoding = resp.encoding or "utf-8"
-    return resp.text
-
-
-def resolve_detail_form_fields(items):
-    """onclick 인자(ancmId, ancmPrg)를 각 항목에 붙인다.
-    실제 상세페이지는 이 값들로 폼을 POST 제출해야 열리므로, 여기서는
-    URL을 만들지 않고 폼 제출에 필요한 값만 남겨둔다 (대시보드에서 처리)."""
-    for item in items:
-        func_name, args = parse_onclick_args(item.get("raw_link"))
-        if len(args) >= 2:
-            item["ancm_id"] = args[0]
-            item["ancm_prg"] = args[1]
-        else:
-            item["ancm_id"] = None
-            item["ancm_prg"] = None
-
-
-def scrape():
-    all_items = []
-
-    session = requests.Session()
-    # 세션 쿠키 확보를 위해 먼저 일반 GET으로 한 번 접속한다.
-    try:
-        session.get(URL, headers=HEADERS, timeout=20)
-    except Exception as e:
-        print(f"[warn] 초기 접속 실패 (계속 진행): {e}", file=sys.stderr)
-
-    for tab, code in TAB_CODES.items():
-        page_index = 1
-        empty_streak = 0
-        while True:
-            try:
-                html = fetch_page(session, code, page_index)
-            except Exception as e:
-                print(f"[warn] 요청 실패: {tab} 페이지 {page_index} ({e})", file=sys.stderr)
-                break
-
-            soup = BeautifulSoup(html, "html.parser")
-            page_text = soup.get_text("\n")
-
-            total_pages = get_total_pages(page_text)
-            page_items = parse_items(soup, tab, page_index)
-            all_items.extend(page_items)
-
-            if not page_items:
-                empty_streak += 1
-                print(f"[warn] {tab} 페이지 {page_index}: 파싱된 항목 0건", file=sys.stderr)
-            else:
-                empty_streak = 0
-
-            # 안전장치: 전체 페이지 수를 잘못 읽었거나 빈 페이지가 계속되면 중단
-            if page_index >= total_pages or page_index >= MAX_PAGES or empty_streak >= 2:
-                break
-            page_index += 1
-
-    resolve_detail_form_fields(all_items)
-
-    return all_items
-
-
-def render_markdown(items):
-    now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
-    lines = [f"# IRIS 공고 현황 ({now})", ""]
-    lines.append(f"조회 탭: {', '.join(TAB_CODES.keys())} (전체 부처)")
-    lines.append("")
-
-    if not items:
-        lines.append("조회된 공고가 없습니다. (요청/파싱 오류 가능성 있음 - 로그 확인 필요)")
-        return "\n".join(lines)
-
-    for tab in TAB_CODES.keys():
-        tab_items = [i for i in items if i["tab"] == tab]
-        lines.append(f"## {tab} ({len(tab_items)}건)")
-        lines.append("")
-        for i in tab_items:
-            title_line = f"- **{i['title']}**"
-            if i.get("detail_url"):
-                title_line = f"- **[{i['title']}]({i['detail_url']})**"
-            lines.append(title_line)
-            lines.append(f"  - 부처/전문기관: {i['org']} > {i['agency']}")
-            lines.append(f"  - 공고번호: {i['ancm_no']}")
-            lines.append(f"  - 공고일자: {i['ancm_date']}")
-            lines.append(f"  - 상태: {i['status']} / 공모유형: {i['type']}")
-        lines.append("")
-
-    return "\n".join(lines)
-
-
-if __name__ == "__main__":
-    items = scrape()
-    md = render_markdown(items)
-
-    os.makedirs("results", exist_ok=True)
-    with open("results/latest.md", "w", encoding="utf-8") as f:
-        f.write(md)
-
-    payload = {
-        "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"),
-        "tabs": list(TAB_CODES.keys()),
-        "items": items,
+    <style>
+    .org-header {
+        background: #2c5aa0;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-top: 18px;
     }
-    with open("results/latest.json", "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    .org-header .count {
+        background: rgba(255,255,255,0.25);
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+    }
+    .tab-count {
+        color: #666;
+        font-size: 0.85rem;
+        margin: 4px 0 10px 0;
+    }
+    .ancm-card {
+        border: 1px solid #e5e5e5;
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        padding: 12px 16px;
+        margin-bottom: 2px;
+    }
+    .ancm-title { font-weight: 600; margin-bottom: 4px; }
+    .ancm-meta { color: #777; font-size: 0.85rem; margin-bottom: 8px; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-    print(f"총 {len(items)}건 저장 완료")
+st.title("📋 IRIS 공고 현황")
+
+
+@st.cache_data(ttl=300)
+def load_data():
+    resp = requests.get(RAW_JSON_URL, timeout=15)
+    resp.raise_for_status()
+    return resp.json()
+
+
+try:
+    data = load_data()
+except Exception as e:
+    st.error(f"데이터를 불러오지 못했습니다: {e}")
+    st.stop()
+
+items = data.get("items", [])
+if not items:
+    st.info("현재 조회된 공고가 없습니다.")
+    st.stop()
+
+df = pd.DataFrame(items)
+df["org_list"] = df["org"].apply(
+    lambda o: [x.strip() for x in o.split(",") if x.strip()] if o else ["부처 미표시"]
+)
+# 콤마로 여러 부처가 같이 적힌 공동(다부처) 공고는, 관련된 부처 그룹 모두에 노출한다.
+exploded = df.explode("org_list").rename(columns={"org_list": "org_label"})
+
+with st.sidebar:
+    st.header("⚙️ 설정")
+    tab_options = sorted(exploded["tab"].unique())
+    org_options = sorted(exploded["org_label"].unique())
+
+    qp = st.query_params
+    saved_tabs = [t for t in qp.get("tabs", "").split(",") if t in tab_options]
+    saved_orgs = [o for o in qp.get("orgs", "").split(",") if o in org_options]
+
+    selected_tabs = st.multiselect(
+        "탭", tab_options, default=saved_tabs or tab_options
+    )
+    selected_orgs = st.multiselect(
+        "소관부처", org_options, default=saved_orgs or org_options
+    )
+    keyword = st.text_input("제목 검색", value=qp.get("kw", ""))
+
+    # 선택값을 URL에 반영 (다음에 이 URL로 들어오면 그대로 복원됨)
+    st.query_params["tabs"] = ",".join(selected_tabs)
+    st.query_params["orgs"] = ",".join(selected_orgs)
+    if keyword:
+        st.query_params["kw"] = keyword
+    elif "kw" in st.query_params:
+        del st.query_params["kw"]
+
+    st.caption("💡 지금 이 필터 상태로 주소창 URL을 즐겨찾기 해두면 다음에도 그대로 열립니다.")
+    st.caption(f"마지막 갱신: {data.get('updated_at', '알 수 없음')}")
+    if st.button("🔄 새로고침"):
+        st.cache_data.clear()
+        st.rerun()
+
+filtered = exploded[exploded["tab"].isin(selected_tabs) & exploded["org_label"].isin(selected_orgs)]
+if keyword:
+    filtered = filtered[filtered["title"].str.contains(keyword, case=False, na=False)]
+
+st.write(f"총 **{filtered['title'].nunique()}**건 (공동부처 공고는 관련 부처 모두에 표시됩니다)")
+
+
+def detail_button_html(ancm_id, ancm_prg):
+    if not ancm_id or not ancm_prg:
+        return ""
+    hidden_inputs = "".join(
+        f'<input type="hidden" name="{f}" value="{ancm_prg if f == "ancmPrg" else (ancm_id if f == "ancmId" else "")}">'
+        for f in FORM_FIELDS
+    )
+    return f"""
+    <form action="{DETAIL_URL}" method="post" target="_blank" style="display:inline;margin:0;">
+        {hidden_inputs}
+        <button type="submit" style="
+            padding:4px 10px;border-radius:6px;border:1px solid #2c5aa0;
+            background:white;color:#2c5aa0;cursor:pointer;font-size:0.85rem;">
+            🔗 IRIS에서 보기
+        </button>
+    </form>
+    """
+
+
+for org_label in sorted(filtered["org_label"].unique(), key=lambda x: (x == "부처 미표시", x)):
+    org_items = filtered[filtered["org_label"] == org_label]
+
+    tab_counts = org_items["tab"].value_counts()
+    tab_summary = "  ·  ".join(f"{t} {c}건" for t, c in tab_counts.items())
+
+    st.markdown(
+        f"""
+        <div class="org-header">
+            <span>{org_label}</span>
+            <span class="count">{len(org_items)}건</span>
+        </div>
+        <div class="tab-count">{tab_summary}</div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    cols = st.columns(3)
+    for i, (_, row) in enumerate(org_items.iterrows()):
+        with cols[i % 3]:
+            html_button = detail_button_html(row.get("ancm_id"), row.get("ancm_prg"))
+            st.markdown(
+                f"""
+                <div class="ancm-card">
+                    <div class="ancm-title">{row['title']}</div>
+                    <div class="ancm-meta">
+                        {row['tab']} · {row['agency']}<br>
+                        공고번호 {row['ancm_no']}<br>
+                        {row['ancm_date']} · {row['status']} / {row['type']}
+                    </div>
+                    {html_button}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
