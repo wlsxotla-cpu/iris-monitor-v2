@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20 16:10 KST",
+  "updated_at": "2026-07-21 09:55 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -218,20 +218,6 @@
     {
       "tab": "접수중",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 첨단기술을 활용한 사회문제해결 실증확산 지원 (개발 및 실증지원) 신규과제 재공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026 - 784호",
-      "ancm_date": "2026-07-10",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023017','ancmIng'); return false;",
-      "attachments": []
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
       "org": "다부처",
       "agency": "과학치안진흥센터",
       "title": "2026년도 미래치안 도전기술 개발(융합탐색) 신규과제 공모",
@@ -339,6 +325,20 @@
       "type": "자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022456','ancmIng'); return false;",
+      "attachments": []
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "정보통신산업진흥원",
+      "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 공고",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0731호",
+      "ancm_date": "2026-06-26",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022696','ancmIng'); return false;",
       "attachments": []
     },
     {
@@ -358,20 +358,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 첨단기술을 활용한 사회문제해결 실증확산 지원 (개발 및 실증지원) 신규과제 재공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026 - 784호",
-      "ancm_date": "2026-07-10",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023017','ancmIng'); return false;",
-      "attachments": []
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "다부처",
       "agency": "과학치안진흥센터",
       "title": "2026년도 미래치안 도전기술 개발(융합탐색) 신규과제 공모",
@@ -483,7 +469,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신산업진흥원",
       "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 공고",
@@ -612,13 +598,27 @@
       "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
-      "title": "2026년 이공계 연구생활장려금 지원 사업 하반기 신규과제 공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0676호",
+      "title": "2026년도 방사선이용 기술개발사업(방사선 기반 소재·장비 기술 혁신화) 신규과제 재공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0797호",
       "ancm_date": "2026-06-11",
+      "status": "공고마감,공고접수중",
+      "type": "정책지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022455','ancmIng'); return false;",
+      "attachments": []
+    },
+    {
+      "tab": "접수중",
+      "page_num": 3,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2027년도 한-일(JSPS) 협력사업 신규과제 공모(협력연구·공동세미나)",
+      "ancm_no": "NR_2026_074",
+      "ancm_date": "2026-06-10",
       "status": "공고접수중",
       "type": "자유공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022575','ancmIng'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022534','ancmIng'); return false;",
       "attachments": []
     }
   ]
