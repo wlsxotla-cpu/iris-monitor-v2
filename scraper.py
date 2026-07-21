@@ -1,20 +1,19 @@
 """
-IRIS(범부처통합연구지원시스템) 사업공고 스크래퍼
+IRIS(범부처통합연구지원시스템) 사업공고 스크래퍼 (requests 기반, 브라우저 미사용)
 
-- https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do 에서
-  전체 소관부처 기준으로 "접수예정" / "접수중" 탭의 공고 목록을 가져와
-  results/latest.md, results/latest.json 파일로 저장한다.
-- 부처 필터링은 여기서 하지 않는다. 전체 부처를 다 가져온 뒤, 어떤 부처를
-  볼지는 대시보드(Streamlit)에서 사용자가 직접 선택한다.
-- 공고마다 상세페이지를 따로 방문하지 않고, 목록 페이지에 있는 링크를
-  그대로 추출한다 (속도를 위한 선택 - 상세페이지 방문은 시간이 오래 걸림).
+- https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do 에
+  실제 브라우저가 보내는 것과 같은 POST 요청을 그대로 보내서 목록 HTML을
+  받아와 파싱한다. (Playwright/헤드리스 브라우저를 쓰지 않아 훨씬 빠르다)
+- 전체 소관부처 기준으로 "접수예정" / "접수중" 데이터를 모두 가져온다.
+  부처 필터링은 여기서 하지 않고, 어떤 부처를 볼지는 대시보드(Streamlit)에서
+  사용자가 직접 고른다.
 - 이전 결과와 비교하는 로직은 없다 (매번 전체 현재 목록을 그대로 저장).
 
 주의:
-  링크가 자바스크립트 기반(javascript:...)이라면 그대로는 클릭해서 이동할
-  수 없어 detail_url이 비어있을 수 있다. 그런 항목은 raw_link 필드에 원본을
-  남겨두니, latest.json에서 실제 값을 확인해서 공유해주시면 실제 이동
-  가능한 링크 패턴으로 바꾸는 방법을 찾아보겠습니다.
+  이 요청 방식(POST + 페이로드)은 사용자가 브라우저 개발자도구에서 직접
+  확인해서 알려준 내용을 기반으로 만든 1차 버전입니다. 세션/쿠키가 추가로
+  필요하거나, 응답 구조가 예상과 달라 파싱이 실패할 수 있습니다. 그런
+  경우 Actions 로그를 공유해주시면 바로 수정하겠습니다.
 """
 
 import json
@@ -23,21 +22,47 @@ import re
 import sys
 from datetime import datetime, timezone, timedelta
 
-from playwright.sync_api import sync_playwright
+import requests
+from bs4 import BeautifulSoup
 
 URL = "https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do"
 
-# 조회할 탭 ("접수예정", "접수중", "마감" 중 선택)
-TABS = ["접수예정", "접수중"]
+# "접수예정"=ancmPre, "접수중"=ancmIng, "마감"=ancmEnd
+TAB_CODES = {
+    "접수예정": "ancmPre",
+    "접수중": "ancmIng",
+}
 
-# 참고용 (부처 필터링에는 더 이상 쓰이지 않음 - 대시보드에서 선택)
-DEPARTMENTS_HINT = ["산업통상부", "중소벤처기업부", "과학기술정보통신부"]
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+}
+
+BASE_PAYLOAD = {
+    "bizSearch": "",
+    "bsnsTl": "",
+    "ancmPrg": "",
+    "pageIndex": "1",
+    "ancmId": "",
+    "ancmNo": "",
+    "ancmTurn": "",
+    "seq": "",
+    "hirkSorgnBsnsCd": "",
+    "bsnsAncmTap": "",
+    "shSorgnYyBsnsCd": "",
+    "sorgnIdArr": "",
+    "ancmSttArr": "",
+    "pbofrTpArr": "",
+    "qualCndtArr": "",
+    "blngGovdSeArr": "",
+    "techFildArr": "",
+    "shBsnsYy": "",
+}
 
 KST = timezone(timedelta(hours=9))
 
-# IRIS 사이트에 실제 존재하는 소관부처 전체 목록 (org 필드가 이 중 하나로만
-# 인식되도록 제한해서, 이전 항목의 상태 태그가 다음 항목의 부처명 자리로
-# 잘못 섞여 들어가는 파싱 오류를 방지한다).
 KNOWN_ORGS = [
     "범부처", "과학기술정보통신부", "산업통상부", "중소벤처기업부", "국토교통부",
     "교육부", "기상청", "농림축산식품부", "농촌진흥청", "국가유산청",
@@ -60,13 +85,19 @@ ITEM_PATTERN = re.compile(
     re.MULTILINE,
 )
 
+CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
 
-def click_search(page):
-    try:
-        page.get_by_text("검색", exact=True).first.click()
-    except Exception as e:
-        print(f"[warn] 검색 버튼 클릭 실패: {e}", file=sys.stderr)
-    page.wait_for_timeout(1500)
+
+def parse_onclick_args(onclick: str):
+    if not onclick:
+        return None, []
+    m = CALL_PATTERN.match(onclick.strip())
+    if not m:
+        return None, []
+    func_name = m.group(1)
+    raw_args = m.group(2)
+    args = [a.strip().strip("'").strip('"') for a in raw_args.split(",") if a.strip()]
+    return func_name, args
 
 
 def get_total_pages(page_text: str) -> int:
@@ -96,73 +127,17 @@ def parse_items(page_text: str, tab: str, page_num: int):
     return items
 
 
-def collect_list(page):
-    """전체 탭 x 전체 페이지를 돌면서 목록 항목(부처/제목/날짜 등)만 먼저 수집한다."""
-    all_items = []
-
-    for tab in TABS:
-        try:
-            page.get_by_text(tab, exact=True).first.click()
-            page.wait_for_timeout(1000)
-        except Exception as e:
-            print(f"[warn] 탭 클릭 실패: {tab} ({e})", file=sys.stderr)
-            continue
-
-        click_search(page)
-
-        page_num = 1
-        while True:
-            body_text = page.inner_text("body")
-            total_pages = get_total_pages(body_text)
-            page_items = parse_items(body_text, tab, page_num)
-            extract_links_by_title(page, page_items)
-            all_items.extend(page_items)
-
-            if page_num >= total_pages:
-                break
-
-            page_num += 1
-            try:
-                page.get_by_text(str(page_num), exact=True).first.click()
-                page.wait_for_timeout(1200)
-            except Exception as e:
-                print(f"[warn] 페이지 이동 실패: {page_num} ({e})", file=sys.stderr)
-                break
-
-    return all_items
-
-
-def extract_links_by_title(page, items):
-    """상세페이지를 따로 방문하지 않고, 지금 보이는 목록 페이지에서
-    제목 텍스트와 일치하는 요소의 href/onclick을 바로 추출한다."""
-    try:
-        # <a> 태그뿐 아니라 onclick만 갖고 href가 없는 경우도 있어서
-        # 텍스트가 일치하는 아무 요소나 찾아 href/onclick을 함께 수집한다.
-        rows = page.evaluate(
-            """
-            () => {
-                const out = [];
-                const all = document.querySelectorAll('a, li, div, span');
-                for (const el of all) {
-                    const text = (el.textContent || '').trim();
-                    if (!text) continue;
-                    const href = el.getAttribute && el.getAttribute('href');
-                    const onclick = el.getAttribute && el.getAttribute('onclick');
-                    if (href || onclick) {
-                        out.push({text, href, onclick});
-                    }
-                }
-                return out;
-            }
-            """
-        )
-    except Exception as e:
-        print(f"[warn] 링크 추출 실패: {e}", file=sys.stderr)
-        return
-
+def attach_links(soup: BeautifulSoup, items):
+    """응답 HTML에서 제목 텍스트와 일치하는 링크의 href/onclick을 붙인다."""
     by_text = {}
-    for r in rows:
-        by_text.setdefault(r["text"], r)
+    for a in soup.find_all("a"):
+        text = a.get_text(strip=True)
+        if not text:
+            continue
+        href = a.get("href")
+        onclick = a.get("onclick")
+        if href or onclick:
+            by_text.setdefault(text, {"href": href, "onclick": onclick})
 
     for item in items:
         r = by_text.get(item["title"])
@@ -178,112 +153,64 @@ def extract_links_by_title(page, items):
             item["raw_link"] = href
 
 
-CALL_PATTERN = re.compile(r"^(\w+)\(([^)]*)\)")
-
-
-def parse_onclick_args(onclick: str):
-    """f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); 같은 문자열에서
-    함수명과 인자 목록(따옴표 벗긴 값)을 뽑아낸다."""
-    if not onclick:
-        return None, []
-    m = CALL_PATTERN.match(onclick.strip())
-    if not m:
-        return None, []
-    func_name = m.group(1)
-    raw_args = m.group(2)
-    args = [a.strip().strip("'").strip('"') for a in raw_args.split(",") if a.strip()]
-    return func_name, args
-
-
-def resolve_url_template(browser, sample_item):
-    """항목 하나만 실제로 클릭해서 이동하는 URL을 확인하고, 그 인자값이
-    URL 안에 그대로 들어있으면 나머지 항목에도 재사용할 수 있는 템플릿을
-    만든다. 못 찾으면 None을 반환한다."""
-    func_name, args = parse_onclick_args(sample_item.get("raw_link"))
-    if not args:
-        return None, func_name
-
-    page = browser.new_page()
-    template = None
-    try:
-        page.goto(URL, wait_until="networkidle")
-        page.get_by_text(sample_item["tab"], exact=True).first.click()
-        page.wait_for_timeout(800)
-        click_search(page)
-        for p in range(2, sample_item.get("page_num", 1) + 1):
-            page.get_by_text(str(p), exact=True).first.click()
-            page.wait_for_timeout(1000)
-
-        target = page.get_by_text(sample_item["title"], exact=True).first
-        resolved_url = None
-        try:
-            with page.context.expect_page(timeout=4000) as popup_info:
-                target.click()
-            new_page = popup_info.value
-            new_page.wait_for_load_state("networkidle")
-            resolved_url = new_page.url
-            new_page.close()
-        except Exception:
-            target.click()
-            page.wait_for_timeout(1500)
-            resolved_url = page.url
-
-        if resolved_url and all(a in resolved_url for a in args):
-            template = resolved_url
-            for i, a in enumerate(args):
-                template = template.replace(a, f"{{arg{i}}}")
-    except Exception as e:
-        print(f"[warn] URL 패턴 확인 실패: {e}", file=sys.stderr)
-    finally:
-        page.close()
-
-    return template, func_name
-
-
-def apply_url_template(items, template, func_name):
-    if not template:
-        return
-    for item in items:
-        if item.get("detail_url"):
-            continue
-        f, args = parse_onclick_args(item.get("raw_link"))
-        if f != func_name or not args:
-            continue
-        try:
-            item["detail_url"] = template.format(**{f"arg{i}": a for i, a in enumerate(args)})
-        except Exception:
-            pass
+def fetch_page(session, ancm_prg: str, page_index: int):
+    payload = dict(BASE_PAYLOAD)
+    payload["ancmPrg"] = ancm_prg
+    payload["pageIndex"] = str(page_index)
+    resp = session.post(URL, data=payload, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    resp.encoding = resp.encoding or "utf-8"
+    return resp.text
 
 
 def scrape():
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto(URL, wait_until="networkidle")
-        items = collect_list(page)
-        page.close()
+    all_items = []
 
-        sample = next((i for i in items if i.get("raw_link") and not i.get("detail_url")), None)
-        if sample:
-            template, func_name = resolve_url_template(browser, sample)
-            apply_url_template(items, template, func_name)
+    session = requests.Session()
+    # 세션 쿠키 확보를 위해 먼저 일반 GET으로 한 번 접속한다.
+    try:
+        session.get(URL, headers=HEADERS, timeout=20)
+    except Exception as e:
+        print(f"[warn] 초기 접속 실패 (계속 진행): {e}", file=sys.stderr)
 
-        browser.close()
+    for tab, code in TAB_CODES.items():
+        page_index = 1
+        while True:
+            try:
+                html = fetch_page(session, code, page_index)
+            except Exception as e:
+                print(f"[warn] 요청 실패: {tab} 페이지 {page_index} ({e})", file=sys.stderr)
+                break
 
-    return items
+            soup = BeautifulSoup(html, "html.parser")
+            page_text = soup.get_text("\n")
+
+            total_pages = get_total_pages(page_text)
+            page_items = parse_items(page_text, tab, page_index)
+            attach_links(soup, page_items)
+            all_items.extend(page_items)
+
+            if not page_items:
+                print(f"[warn] {tab} 페이지 {page_index}: 파싱된 항목 0건", file=sys.stderr)
+
+            if page_index >= total_pages:
+                break
+            page_index += 1
+
+    return all_items
 
 
 def render_markdown(items):
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
     lines = [f"# IRIS 공고 현황 ({now})", ""]
-    lines.append(f"조회 탭: {', '.join(TABS)} (전체 부처)")
+    lines.append(f"조회 탭: {', '.join(TAB_CODES.keys())} (전체 부처)")
     lines.append("")
 
     if not items:
-        lines.append("조회된 공고가 없습니다. (선택자 오류 가능성 있음 - 로그 확인 필요)")
+        lines.append("조회된 공고가 없습니다. (요청/파싱 오류 가능성 있음 - 로그 확인 필요)")
         return "\n".join(lines)
 
-    for tab in TABS:
+    for tab in TAB_CODES.keys():
         tab_items = [i for i in items if i["tab"] == tab]
         lines.append(f"## {tab} ({len(tab_items)}건)")
         lines.append("")
@@ -296,9 +223,6 @@ def render_markdown(items):
             lines.append(f"  - 공고번호: {i['ancm_no']}")
             lines.append(f"  - 공고일자: {i['ancm_date']}")
             lines.append(f"  - 상태: {i['status']} / 공모유형: {i['type']}")
-            if i.get("attachments"):
-                for a in i["attachments"]:
-                    lines.append(f"    - 첨부: [{a['name']}]({a['url']})")
         lines.append("")
 
     return "\n".join(lines)
@@ -314,7 +238,7 @@ if __name__ == "__main__":
 
     payload = {
         "updated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M KST"),
-        "tabs": TABS,
+        "tabs": list(TAB_CODES.keys()),
         "items": items,
     }
     with open("results/latest.json", "w", encoding="utf-8") as f:
