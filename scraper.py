@@ -178,7 +178,7 @@ def resolve_detail_form_fields(items):
             item["ancm_prg"] = None
 
 
-YEARS_BACK = 3  # 최근 몇 년치 공고만 가져올지
+YEARS_BACK = 1  # 최근 몇 년치 공고만 가져올지 (접수예정/접수중만 보면 되므로 1년이면 충분)
 
 
 def is_recent(ancm_date: str, cutoff_date) -> bool:
@@ -198,7 +198,7 @@ def scrape():
     try:
         session.get(URL, headers=HEADERS, timeout=20)
     except Exception as e:
-        print(f"[warn] 초기 접속 실패 (계속 진행): {e}", file=sys.stderr)
+        print(f"[warn] 초기 접속 실패 (계속 진행): {e}", file=sys.stderr, flush=True)
 
     for tab, code in TAB_CODES.items():
         page_index = 1
@@ -207,7 +207,7 @@ def scrape():
             try:
                 html = fetch_page(session, code, page_index)
             except Exception as e:
-                print(f"[warn] 요청 실패: {tab} 페이지 {page_index} ({e})", file=sys.stderr)
+                print(f"[warn] 요청 실패: {tab} 페이지 {page_index} ({e})", file=sys.stderr, flush=True)
                 break
 
             soup = BeautifulSoup(html, "html.parser")
@@ -215,6 +215,11 @@ def scrape():
 
             total_pages = get_total_pages(page_text)
             page_items = parse_items(soup, tab, page_index)
+            print(
+                f"[info] {tab} 페이지 {page_index}/{total_pages} 처리 중 ({len(page_items)}건 파싱)",
+                file=sys.stderr,
+                flush=True,
+            )
 
             recent_items = [i for i in page_items if is_recent(i["ancm_date"], cutoff_date)]
             has_old_item = len(recent_items) < len(page_items)
@@ -222,7 +227,7 @@ def scrape():
 
             if not page_items:
                 empty_streak += 1
-                print(f"[warn] {tab} 페이지 {page_index}: 파싱된 항목 0건", file=sys.stderr)
+                print(f"[warn] {tab} 페이지 {page_index}: 파싱된 항목 0건", file=sys.stderr, flush=True)
             else:
                 empty_streak = 0
 
@@ -230,6 +235,7 @@ def scrape():
                 print(
                     f"[info] {tab} 페이지 {page_index}: 최근 {YEARS_BACK}년 이전 공고 발견, 이후 페이지 생략",
                     file=sys.stderr,
+                    flush=True,
                 )
 
             # 안전장치: 전체 페이지 수를 잘못 읽었거나 빈 페이지가 계속되거나
