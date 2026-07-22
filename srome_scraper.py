@@ -37,6 +37,12 @@ INTRN_PARAMS = {
 }
 INTRN_MAX_PAGES = 20
 
+DETAIL_URL = "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do"
+PRGM_ID_BY_CATEGORY = {
+    "수요조사": "XPG201010000",
+    "인터넷공시": "XPG201020000",
+}
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -100,6 +106,15 @@ def parse_srome_items(soup: BeautifulSoup, category: str):
         dday_el = box.select_one("div.table_box_btn span.badge")
         dday = dday_el.get_text(strip=True) if dday_el else ""
 
+        detail_url = None
+        if detail_id:
+            prgm_id = PRGM_ID_BY_CATEGORY.get(category, "")
+            detail_url = (
+                f"{DETAIL_URL}?pageIndex=&sbjtPlnnAncmId={detail_id}&prgmId={prgm_id}"
+                f"&searchItem=title&searchItemContent=&searchDmndYear="
+                f"&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+            )
+
         items.append(
             {
                 "category": category,
@@ -110,6 +125,7 @@ def parse_srome_items(soup: BeautifulSoup, category: str):
                 "notice_date": fields.get("공고일") or fields.get("등록일", ""),
                 "dday": dday,
                 "detail_id": detail_id,
+                "detail_url": detail_url,
             }
         )
 
