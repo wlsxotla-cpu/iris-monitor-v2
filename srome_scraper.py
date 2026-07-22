@@ -5,10 +5,10 @@ KEIT SROME 수요조사 / 인터넷공시 스크래퍼
   기본 화면(파라미터 없이 GET)이 이미 접수중 항목만 최신순으로 보여주고 있어서
   그대로 가져오면 된다.
 - 인터넷공시: https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveIntrnDsclsLstView.do
-  기본 화면은 전체(접수마감 포함) 오래된 순서로 나오고, GET 쿼리 파라미터
-  (pageIndex 등)는 무시된다 - IRIS처럼 실제로는 POST 방식일 가능성이 높다.
-  정확한 필터(접수중+최신순) 요청 방식이 아직 확인되지 않아 이 부분은
-  비어있는 상태로 둔다 (추후 payload 확인되면 채울 예정).
+  GET 요청이지만, pageIndex 하나만 보내면 서버가 무시하고 기본값(전체/오래된순)을
+  돌려준다. 실제로는 sbjtPlnnAncmId, searchItem, searchItemContent,
+  searchDmndYear, searchRcptStDt, searchRcptEdDt, rcveSe 등 전체 파라미터가
+  다 있어야 필터가 제대로 적용된다 (rcveSe=01 이 접수중).
 
 결과는 results/srome.json 에 저장한다.
 """
@@ -23,7 +23,19 @@ import requests
 from bs4 import BeautifulSoup
 
 DMND_URL = "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveDmndSrvyLstView.do?prgmId=XPG201010000"
-INTRN_URL = "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveIntrnDsclsLstView.do?prgmId=XPG201020000"
+INTRN_URL = "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveIntrnDsclsLstView.do"
+INTRN_PARAMS = {
+    "pageIndex": "",
+    "sbjtPlnnAncmId": "",
+    "prgmId": "XPG201020000",
+    "searchItem": "title",
+    "searchItemContent": "",
+    "searchDmndYear": "",
+    "searchRcptStDt": "",
+    "searchRcptEdDt": "",
+    "rcveSe": "02",  # 접수중
+}
+INTRN_MAX_PAGES = 20
 
 HEADERS = {
     "User-Agent": (
@@ -104,21 +116,61 @@ def parse_srome_items(soup: BeautifulSoup, category: str):
     return items
 
 
+def get_total_pages(page_text: str) -> int:
+    m = re.search(r"페이지\s*\d+\s*/\s*(\d+)", page_text)
+    return int(m.group(1)) if m else 1
+
+
 def fetch_dmnd_srvy(session):
     try:
         resp = session.get(DMND_URL, headers=HEADERS, timeout=20)
         resp.raise_for_status()
     except Exception as e:
-        print(f"[warn] 수요조사 요청 실패: {e}", file=sys.stderr)
+        print(f"[warn] 수요조사 요청 실패: {e}", file=sys.stderr, flush=True)
         return []
     soup = BeautifulSoup(resp.text, "html.parser")
-    return parse_srome_items(soup, "수요조사")
+    items = parse_srome_items(soup, "수요조사")
+    print(f"[info] 수요조사 {len(items)}건 파싱", file=sys.stderr, flush=True)
+    return items
 
 
 def fetch_intrn_dscls(session):
-    # TODO: 접수중+최신순 필터의 실제 요청(POST) 방식이 확인되면 채운다.
-    print("[warn] 인터넷공시: 필터 요청 방식 미확인 - 건너뜀", file=sys.stderr)
-    return []
+    items = []
+    page_index = 1
+    empty_streak = 0
+
+    while True:
+        params = dict(INTRN_PARAMS)
+        params["pageIndex"] = str(page_index)
+        try:
+            resp = session.get(INTRN_URL, params=params, headers=HEADERS, timeout=20)
+            resp.raise_for_status()
+        except Exception as e:
+            print(f"[warn] 인터넷공시 요청 실패: 페이지 {page_index} ({e})", file=sys.stderr, flush=True)
+            break
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+        page_items = parse_srome_items(soup, "인터넷공시")
+        total_pages = get_total_pages(soup.get_text("\n"))
+
+        print(
+            f"[info] 인터넷공시 페이지 {page_index}/{total_pages} 처리 중 ({len(page_items)}건 파싱)",
+            file=sys.stderr,
+            flush=True,
+        )
+
+        items.extend(page_items)
+
+        if not page_items:
+            empty_streak += 1
+        else:
+            empty_streak = 0
+
+        if page_index >= total_pages or page_index >= INTRN_MAX_PAGES or empty_streak >= 2:
+            break
+        page_index += 1
+
+    return items
 
 
 def scrape():
