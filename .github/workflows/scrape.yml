@@ -38,8 +38,3 @@ jobs:
           git diff --cached --quiet && echo "변경 없음" || git commit -m "chore: update 공고 현황 ($(date -u +%Y-%m-%d))"
           git pull --rebase origin main
           git push
-
-      - name: Ping dashboards to prevent sleeping
-        run: |
-          curl -s -o /dev/null --max-time 30 https://iris-monitor.streamlit.app/ || true
-          curl -s -o /dev/null --max-time 30 https://srome-dashboard.streamlit.app/ || true
