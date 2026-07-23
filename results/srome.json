@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-07-23 11:48 KST",
+  "updated_at": "2026-07-24 07:13 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "M.AX 전문기업 선정을 위한 공고(3차)",
-      "plan_year": "2026",
-      "period": "2026-07-16 09:00 ~ 2026-07-23 18:00",
-      "notice_date": "2026-07-16",
-      "dday": "D-0",
-      "detail_id": "000984",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000984&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -19,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-07-03 09:00 ~ 2026-07-24 23:59",
       "notice_date": "2026-07-03",
-      "dday": "D-1",
+      "dday": "D-0",
       "detail_id": "000979",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000979&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,9 +19,20 @@
       "plan_year": "2026",
       "period": "2026-07-13 09:00 ~ 2026-07-24 23:59",
       "notice_date": "2026-07-13",
-      "dday": "D-1",
+      "dday": "D-0",
       "detail_id": "000982",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000982&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "M.AX 전문기업 선정을 위한 공고(3차)",
+      "plan_year": "2026",
+      "period": "2026-07-16 09:00 ~ 2026-07-27 12:00",
+      "notice_date": "2026-07-16",
+      "dday": "D-3",
+      "detail_id": "000984",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000984&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-07-15 09:00 ~ 2026-07-28 18:00",
       "notice_date": "2026-07-15",
-      "dday": "D-5",
+      "dday": "D-4",
       "detail_id": "000945",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000945&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-07-08 09:00 ~ 2026-08-05 18:00",
       "notice_date": "2026-07-08",
-      "dday": "D-13",
+      "dday": "D-12",
       "detail_id": "000981",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000981&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -63,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-07-16 09:00 ~ 2026-08-07 18:00",
       "notice_date": "2026-07-16",
-      "dday": "D-15",
+      "dday": "D-14",
       "detail_id": "000983",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000983&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -74,7 +74,7 @@
       "plan_year": "2026",
       "period": "2026-07-22 09:00 ~ 2026-08-31 23:59",
       "notice_date": "2026-07-22",
-      "dday": "D-39",
+      "dday": "D-38",
       "detail_id": "000985",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000985&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
