@@ -2,8 +2,8 @@ name: IRIS 공고 스크래핑
 
 on:
   schedule:
-    # 매일 평일 09:00 KST = 00:00 UTC
-    - cron: "0 0 * * 1-5"
+    # 매일 새벽 06:15 KST = 전날 21:15 UTC (9시 전에 확실히 끝나도록 여유를 둠, 정각이 아닌 분으로 지정해 GitHub 지연 최소화)
+    - cron: "15 21 * * *"
   workflow_dispatch: {}
 
 concurrency:
