@@ -1,0 +1,16 @@
+name: 대시보드 깨우기
+
+on:
+  schedule:
+    # 평일 오전 9시 ~ 오후 6시(KST), 2시간 간격 = 00:00,02:00,04:00,06:00,08:00 UTC
+    - cron: "0 0,2,4,6,8 * * 1-5"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping dashboards to prevent sleeping
+        run: |
+          curl -s -o /dev/null --max-time 30 https://iris-monitor.streamlit.app/ || true
+          curl -s -o /dev/null --max-time 30 https://srome-dashboard.streamlit.app/ || true
