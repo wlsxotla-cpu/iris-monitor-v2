@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24 07:13 KST",
+  "updated_at": "2026-07-24 15:16 KST",
   "items": [
     {
       "category": "수요조사",
@@ -66,6 +66,17 @@
       "dday": "D-14",
       "detail_id": "000983",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000983&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "[가칭] 첨단 미래섬유 혁신 기술개발사업 기획을 위한 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-07-24 09:00 ~ 2026-08-07 18:00",
+      "notice_date": "2026-07-24",
+      "dday": "D-14",
+      "detail_id": "000986",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000986&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",

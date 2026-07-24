@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24 07:13 KST",
+  "updated_at": "2026-07-24 15:16 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -19,22 +19,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023197','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "023197",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 제3차 과학기술분야 연구기획과제 공모",
-      "ancm_no": "NR_2026_079",
-      "ancm_date": "2026-07-24",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023178','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023178",
       "ancm_prg": "ancmPre"
     },
     {
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -212,6 +196,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 제3차 과학기술분야 연구기획과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 2026-0824호",
+      "ancm_date": "2026-07-24",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023178','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023178",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -359,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신산업진흥원",
       "title": "2026년「협업지능 피지컬AI 기반 SW플랫폼 연구개발생태계 조성」사업 공고",
