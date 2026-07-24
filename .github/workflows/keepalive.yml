@@ -7,10 +7,19 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  ping:
+  wake:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping dashboards to prevent sleeping
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
         run: |
-          curl -s -o /dev/null --max-time 30 https://iris-monitor.streamlit.app/ || true
-          curl -s -o /dev/null --max-time 30 https://srome-dashboard.streamlit.app/ || true
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Wake dashboards
+        run: python wake_apps.py
