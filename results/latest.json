@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26 07:08 KST",
+  "updated_at": "2026-07-27 07:10 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -201,6 +201,22 @@
       "tab": "접수중",
       "page_num": 1,
       "org": "과학기술정보통신부",
+      "agency": "한국과학기술기획평가원",
+      "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
+      "ancm_no": "IT_2026_001",
+      "ancm_date": "2026-07-27",
+      "status": "공고접수중",
+      "type": "자유공모,정책지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "017852",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 제3차 과학기술분야 연구기획과제 공모",
       "ancm_no": "과학기술정보통신부 공고 2026-0824호",
@@ -343,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신산업진흥원",
       "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 공고",
@@ -483,22 +499,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('018400','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "018400",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국과학기술기획평가원",
-      "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
-      "ancm_no": "IT_2026_001",
-      "ancm_date": "2026-01-01",
-      "status": "공고접수중",
-      "type": "자유공모,정책지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "017852",
       "ancm_prg": "ancmIng"
     }
   ]
