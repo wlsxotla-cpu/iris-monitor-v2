@@ -1,26 +1,10 @@
 {
-  "updated_at": "2026-07-27 10:30 KST",
+  "updated_at": "2026-07-28 07:17 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 2차 에너지수요관리핵심기술개발사업 신규지원대상 연구개발과제 공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-719호",
-      "ancm_date": "2026-07-24",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023197','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023197",
-      "ancm_prg": "ancmPre"
-    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -83,6 +67,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022857','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "022857",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "019614",
       "ancm_prg": "ancmPre"
     },
     {
@@ -200,6 +200,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "기후에너지환경부",
+      "agency": "한국에너지기술평가원",
+      "title": "2026년도 2차 에너지수요관리핵심기술개발사업 신규지원대상 연구개발과제 공고",
+      "ancm_no": "기후에너지환경부 공고 제2026-719호",
+      "ancm_date": "2026-07-24",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023197','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023197",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 제3차 과학기술분야 연구기획과제 공모",
@@ -275,22 +291,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023018','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023018",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 「양자정보과학 인적기반조성사업」리더급 연구역량강화(전략기술형) 신규과제 재공모 (수정)",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0670호",
-      "ancm_date": "2026-07-08",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022977','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022977",
       "ancm_prg": "ancmIng"
     },
     {
@@ -426,22 +426,6 @@
       "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
-      "title": "2026년도 방사선이용 기술개발사업(방사선 기반 소재·장비 기술 혁신화) 신규과제 재공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0797호",
-      "ancm_date": "2026-06-11",
-      "status": "공고접수중",
-      "type": "정책지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022455','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022455",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
       "title": "2027년도 한-일(JSPS) 협력사업 신규과제 공모(협력연구·공동세미나)",
       "ancm_no": "NR_2026_074",
       "ancm_date": "2026-06-10",
@@ -451,38 +435,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022534','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "022534",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(딥테크트랙)",
-      "ancm_no": "중소벤처기업부 제2026 -188호",
-      "ancm_date": "2026-03-19",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "020160",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(일반트랙)",
-      "ancm_no": "중소벤처기업부 제2026 -188호",
-      "ancm_date": "2026-03-19",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020159','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "020159",
       "ancm_prg": "ancmIng"
     },
     {
