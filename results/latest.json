@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29 07:15 KST",
+  "updated_at": "2026-07-30 07:11 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -8,33 +8,17 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "test",
-      "ancm_no": "산업통상부 공고 제2026-521호",
-      "ancm_date": "2026-07-29",
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "표준공정 기반 공정최적화 기술개발사업(공정최적화R&D) 시행계획 공고",
+      "ancm_no": "중소벤처기업부 공고 제2026-484호",
+      "ancm_date": "2026-07-30",
       "status": "공고예고",
-      "type": "품목지정공모",
+      "type": "자유공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023257','ancmPre'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023077','ancmPre'); return false;",
       "attachments": [],
-      "ancm_id": "023257",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 제3차 산업기술R&D연구기획사업 신규지원 대상과제 공고",
-      "ancm_no": "산업통상부 공고 제2026-521호",
-      "ancm_date": "2026-07-29",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023137','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023137",
+      "ancm_id": "023077",
       "ancm_prg": "ancmPre"
     },
     {
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -212,6 +196,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 제3차 산업기술R&D연구기획사업 신규지원 대상과제 공고",
+      "ancm_no": "산업통상부 공고 제2026-521호",
+      "ancm_date": "2026-07-29",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023137','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023137",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -359,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년 휴먼프론티어과학프로그램(HFSP) 협력사업(사전지원) 신규과제 공고",
