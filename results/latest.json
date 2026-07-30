@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30 07:11 KST",
+  "updated_at": "2026-07-30 12:17 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -88,22 +88,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국산업기술진흥원",
       "title": "2026년도 10대 메가프로젝트 기술산업화 사업공고",
@@ -196,6 +180,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "정보통신기획평가원",
+      "title": "범부처 신속대응 R&D IITP 전담 지정 과제",
+      "ancm_no": "해당없음(신속대응R&D)",
+      "ancm_date": "2026-07-30",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023317','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023317",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -314,6 +314,22 @@
       "page_num": 1,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "019614",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
       "ancm_no": "중소벤처기업부 공고 제2026-446호",
       "ancm_date": "2026-07-10",
@@ -327,7 +343,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국제공동연구 신속지원사업(미국 제네시스 미션과의 협력을 위한 탐색연구) 신규과제 공모",
@@ -343,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 인공지능혁신인재양성 2차 사업 공고",
