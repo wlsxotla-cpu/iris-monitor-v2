@@ -354,6 +354,14 @@ def title_matches_keywords(item: dict) -> list:
     return [kw for kw in KEYWORDS if kw in text]
 
 
+def is_candidate(item: dict) -> tuple:
+    """키워드 매칭 또는 의미 유사도, 둘 중 하나라도 걸리면 후보로 채택."""
+    matched_kw = title_matches_keywords(item)
+    sim_score = semantic_score(item["title"], item["org"])
+    is_cand = bool(matched_kw) or (sim_score >= SEMANTIC_THRESHOLD)
+    return is_cand, matched_kw, sim_score
+
+
 def screen_and_download(session, items: list, output_dir="results/attachments"):
     screening = []
     for item in items:
@@ -364,8 +372,9 @@ def screen_and_download(session, items: list, output_dir="results/attachments"):
             "org": item["org"],
             "tab": item["tab"],
             "ancm_date": item["ancm_date"],
-            "keyword_matched": matched,
-            "candidate": bool(matched),
+    "keyword_matched": matched,
+    "semantic_score": round(sim_score, 3),
+    "candidate": is_cand,
             "attachments": [],
         }
 
