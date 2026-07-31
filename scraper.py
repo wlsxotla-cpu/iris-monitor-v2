@@ -372,9 +372,9 @@ def screen_and_download(session, items: list, output_dir="results/attachments"):
             "org": item["org"],
             "tab": item["tab"],
             "ancm_date": item["ancm_date"],
-    "keyword_matched": matched,
-    "semantic_score": round(sim_score, 3),
-    "candidate": is_cand,
+            "keyword_matched": matched,
+            "semantic_score": round(sim_score, 3),
+            "candidate": is_cand,
             "attachments": [],
         }
 
