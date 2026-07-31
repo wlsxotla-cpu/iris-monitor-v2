@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 17:00 KST",
+  "updated_at": "2026-07-31 17:28 KST",
   "items": [
     {
       "ancm_id": "023077",
@@ -8,7 +8,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-07-30",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.768,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -18,7 +19,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-07-27",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.573,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -28,7 +30,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-07-16",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.418,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -38,7 +41,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.536,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -47,8 +51,11 @@
       "org": "",
       "tab": "접수예정",
       "ancm_date": "2026-05-29",
-      "keyword_matched": [],
-      "candidate": false,
+      "keyword_matched": [
+        "실증 지원기관"
+      ],
+      "semantic_score": 0.527,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -58,7 +65,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-05-19",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.528,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -68,7 +76,8 @@
       "tab": "접수예정",
       "ancm_date": "2026-04-14",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.528,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -77,9 +86,8 @@
       "org": "",
       "tab": "접수예정",
       "ancm_date": "2026-02-19",
-      "keyword_matched": [
-        "방사"
-      ],
+      "keyword_matched": [],
+      "semantic_score": 0.514,
       "candidate": true,
       "attachments": []
     },
@@ -90,7 +98,8 @@
       "tab": "접수예정",
       "ancm_date": "2025-12-23",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.565,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -100,7 +109,8 @@
       "tab": "접수예정",
       "ancm_date": "2025-11-28",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.65,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -110,7 +120,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-30",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.607,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -120,7 +131,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-29",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.699,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -130,7 +142,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-27",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.573,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -140,7 +153,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-24",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.382,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -149,8 +163,11 @@
       "org": "과학기술정보통신부",
       "tab": "접수중",
       "ancm_date": "2026-07-24",
-      "keyword_matched": [],
-      "candidate": false,
+      "keyword_matched": [
+        "연구기획과제"
+      ],
+      "semantic_score": 0.523,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -160,7 +177,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-24",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.505,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -170,7 +188,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.558,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -180,7 +199,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.357,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -190,7 +210,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.505,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -200,7 +221,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.563,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -210,7 +232,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.576,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -220,7 +243,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-08",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.504,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -230,7 +254,8 @@
       "tab": "접수중",
       "ancm_date": "2026-07-03",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.537,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -240,7 +265,8 @@
       "tab": "접수중",
       "ancm_date": "2026-06-30",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.455,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -250,7 +276,8 @@
       "tab": "접수중",
       "ancm_date": "2026-06-30",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.49,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -260,7 +287,8 @@
       "tab": "접수중",
       "ancm_date": "2026-06-29",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.593,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -270,7 +298,8 @@
       "tab": "접수중",
       "ancm_date": "2026-06-22",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.478,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -280,7 +309,8 @@
       "tab": "접수중",
       "ancm_date": "2026-06-10",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.475,
+      "candidate": true,
       "attachments": []
     },
     {
@@ -290,7 +320,8 @@
       "tab": "접수중",
       "ancm_date": "2026-02-02",
       "keyword_matched": [],
-      "candidate": false,
+      "semantic_score": 0.577,
+      "candidate": true,
       "attachments": []
     }
   ]
