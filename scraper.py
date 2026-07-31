@@ -293,4 +293,20 @@ if __name__ == "__main__":
     with open("results/latest.json", "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-    print(f"총 {len(items)}건 저장 완료")
+    print(f"총 {len(items)}건 저장 완료")  # 기존 동작은 여기서 이미 100% 완료됨
+
+    # --- 신규 추가: 키워드 스크리닝 + 후보 첨부파일 다운로드 ---
+    # 이 블록에서 무슨 에러가 나도 위의 기존 저장 결과에는 전혀 영향 없음
+    try:
+        session = requests.Session()
+        session.get(URL, headers=HEADERS, timeout=20)
+        screening = screen_and_download(session, items)
+        with open("results/screening.json", "w", encoding="utf-8") as f:
+            json.dump(
+                {"updated_at": payload["updated_at"], "items": screening},
+                f, ensure_ascii=False, indent=2,
+            )
+        n_candidates = sum(1 for s in screening if s["candidate"])
+        print(f"[스크리닝] 키워드 후보 {n_candidates}건 (첨부파일 확인됨)")
+    except Exception as e:
+        print(f"[warn] 스크리닝 단계 실패 (기존 결과에는 영향 없음): {e}", file=sys.stderr, flush=True)
