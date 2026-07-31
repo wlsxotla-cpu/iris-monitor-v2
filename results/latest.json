@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31 07:18 KST",
+  "updated_at": "2026-07-31 16:42 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -40,22 +40,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 NCP활동지원사업 신규과제 2차 공모",
-      "ancm_no": "과학기술정보통신부 제2026-0817호",
-      "ancm_date": "2026-07-24",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023157','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023157",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "국토교통부",
       "agency": "국토교통과학기술진흥원",
       "title": "(공고-국-제29호) 2026년 국토교통연구기획 사업 제2차 시행 공고",
@@ -83,38 +67,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "022957",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020654','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "020654",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
       "ancm_prg": "ancmPre"
     },
     {
@@ -167,7 +119,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -183,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국산업기술진흥원",
       "title": "2026년도 10대 메가프로젝트 기술산업화 사업공고",
@@ -199,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "테스트",
@@ -296,6 +248,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년 NCP활동지원사업 신규과제 2차 공모",
+      "ancm_no": "과학기술정보통신부 제2026-0817호",
+      "ancm_date": "2026-07-24",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023157','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023157",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "다부처",
       "agency": "과학치안진흥센터",
       "title": "2026년도 미래치안 도전기술 개발(융합탐색) 신규과제 공모",
@@ -346,6 +314,22 @@
       "page_num": 1,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020654','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "020654",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
       "ancm_no": "중소벤처기업부 공고 제2026-446호",
       "ancm_date": "2026-07-10",
@@ -359,7 +343,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국제공동연구 신속지원사업(미국 제네시스 미션과의 협력을 위한 탐색연구) 신규과제 공모",
