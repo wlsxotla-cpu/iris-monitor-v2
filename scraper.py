@@ -276,6 +276,98 @@ def render_markdown(items):
 
     return "\n".join(lines)
 
+DETAIL_URL = "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do"
+FILE_CHECK_URL = "https://www.iris.go.kr/comm/file/retrieveCheckFileDownload.do"
+FILE_DOWNLOAD_URL = "https://www.iris.go.kr/comm/file/fileDownload.do"
+
+ATCH_PATTERN = re.compile(
+    r"f_bsnsAncm_downloadAtchFile\('([^']*)',\s*'([^']*)',\s*'([^']*)',\s*'([^']*)'\)"
+)
+
+KEYWORDS = [
+    "섬유", "원단", "직물", "부직포", "니들펀칭", "습식초지", "방사", "편직", "제직",
+    "염색", "가공", "발수", "항균", "난연", "접촉냉감", "흡한속건", "방오",
+    "리사이클", "재활용", "재생원료", "순환경제", "친환경 소재", "바이오매스",
+    "나노섬유", "나노소재", "그래핀", "에어로겔", "복합소재", "복합재",
+    "방호복", "방검", "방탄", "방화복", "구명조끼", "안전보호구",
+    "필터", "여과", "흡착", "탈취", "소재", "화학소재", "고분자",
+    "견뢰도", "물성시험", "시험인증", "KOLAS",
+]
+
+
+def fetch_detail(session, ancm_id: str, ancm_prg: str) -> str:
+    payload = dict(BASE_PAYLOAD)
+    payload["ancmId"] = ancm_id
+    payload["ancmPrg"] = ancm_prg
+    resp = session.post(DETAIL_URL, data=payload, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    resp.encoding = resp.encoding or "utf-8"
+    return resp.text
+
+
+def extract_attachments_from_detail(html: str):
+    return [
+        {"atchDocId": m.group(1), "atchFileId": m.group(2),
+         "fileNm": m.group(3), "fileSz": m.group(4)}
+        for m in ATCH_PATTERN.finditer(html)
+    ]
+
+
+def download_attachment(session, atch: dict, dest_dir: str):
+    check_payload = {"atchDocId": atch["atchDocId"], "atchFileId": atch["atchFileId"]}
+    session.post(FILE_CHECK_URL, data=check_payload, headers=HEADERS, timeout=20)
+
+    params = {"atchDocId": atch["atchDocId"], "atchFileId": atch["atchFileId"]}
+    resp = session.get(FILE_DOWNLOAD_URL, params=params, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+
+    os.makedirs(dest_dir, exist_ok=True)
+    safe_name = re.sub(r'[\\/:*?"<>|]', "_", atch["fileNm"])
+    path = os.path.join(dest_dir, safe_name)
+    with open(path, "wb") as f:
+        f.write(resp.content)
+    return path
+
+
+def title_matches_keywords(item: dict) -> list:
+    text = f"{item['title']} {item['org']} {item['agency']}"
+    return [kw for kw in KEYWORDS if kw in text]
+
+
+def screen_and_download(session, items: list, output_dir="results/attachments"):
+    screening = []
+    for item in items:
+        matched = title_matches_keywords(item)
+        entry = {
+            "ancm_id": item.get("ancm_id"),
+            "title": item["title"],
+            "org": item["org"],
+            "tab": item["tab"],
+            "ancm_date": item["ancm_date"],
+            "keyword_matched": matched,
+            "candidate": bool(matched),
+            "attachments": [],
+        }
+
+        if matched and item.get("ancm_id") and item.get("ancm_prg"):
+            try:
+                html = fetch_detail(session, item["ancm_id"], item["ancm_prg"])
+                atchs = extract_attachments_from_detail(html)
+                dest = os.path.join(output_dir, item["ancm_id"])
+                for atch in atchs:
+                    try:
+                        path = download_attachment(session, atch, dest)
+                        entry["attachments"].append(path)
+                    except Exception as e:
+                        print(f"[warn] 첨부파일 다운로드 실패 {item['title']}: {e}",
+                              file=sys.stderr, flush=True)
+            except Exception as e:
+                print(f"[warn] 상세페이지 조회 실패 {item['title']}: {e}",
+                      file=sys.stderr, flush=True)
+
+        screening.append(entry)
+
+    return screening
 
 if __name__ == "__main__":
     items = scrape()
