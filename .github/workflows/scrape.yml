@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "iris-monitor-bot"
           git config user.email "actions@github.com"
-          git add results/latest.md results/latest.json results/srome.json
+          git add results/latest.md results/latest.json results/srome.json results/screening.json results/attachments
           git diff --cached --quiet && echo "변경 없음" || git commit -m "chore: update 공고 현황 ($(date -u +%Y-%m-%d))"
           git pull --rebase origin main
           git push
