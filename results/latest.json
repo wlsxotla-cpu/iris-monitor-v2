@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-08-02 07:09 KST",
+  "updated_at": "2026-08-03 07:08 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 반도체첨단산업기술개발(시스템반도체기술개발) 신규 지원대상 연구개발과제 추가 공고",
+      "ancm_no": "KT_2026_008",
+      "ancm_date": "2026-08-03",
+      "status": "공고예고",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023319",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -51,22 +67,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022877','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "022877",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "우주항공청",
-      "agency": "우주항공청",
-      "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 신규과제 공고",
-      "ancm_no": "우주항공청 공고 제2026-0084호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "022957",
       "ancm_prg": "ancmPre"
     },
     {
@@ -280,6 +280,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "우주항공청",
+      "agency": "우주항공청",
+      "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 신규과제 공고",
+      "ancm_no": "우주항공청 공고 제2026-0084호",
+      "ancm_date": "2026-07-10",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('022957','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "022957",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2027년 제18차 일본 HOPE Meeting 참가자 모집 공모",
@@ -311,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
