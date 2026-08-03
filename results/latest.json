@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 07:08 KST",
+  "updated_at": "2026-08-04 07:16 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -8,17 +8,17 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 반도체첨단산업기술개발(시스템반도체기술개발) 신규 지원대상 연구개발과제 추가 공고",
-      "ancm_no": "KT_2026_008",
+      "org": "과학기술정보통신부",
+      "agency": "정보통신산업진흥원",
+      "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 재공고",
+      "ancm_no": "과학기술정보통신부 제2026-0862",
       "ancm_date": "2026-08-03",
       "status": "공고예고",
-      "type": "품목지정공모",
+      "type": "지정공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmPre'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023377','ancmPre'); return false;",
       "attachments": [],
-      "ancm_id": "023319",
+      "ancm_id": "023377",
       "ancm_prg": "ancmPre"
     },
     {
@@ -56,6 +56,22 @@
     {
       "tab": "접수예정",
       "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 반도체첨단산업기술개발 신규 지원대상 연구개발과제 추가 공고",
+      "ancm_no": "산업통상부 공고 제2026-525호",
+      "ancm_date": "2026-07-26",
+      "status": "공고예고",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023319",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
       "org": "국토교통부",
       "agency": "국토교통과학기술진흥원",
       "title": "(공고-국-제29호) 2026년 국토교통연구기획 사업 제2차 시행 공고",
@@ -83,22 +99,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022074','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "022074",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "",
-      "agency": "한국과학기술기획평가원",
-      "title": "test",
-      "ancm_no": "IT_2026_002",
-      "ancm_date": "2026-05-19",
-      "status": "공고예고",
-      "type": "미등록",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('021774','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "021774",
       "ancm_prg": "ancmPre"
     },
     {
@@ -164,6 +164,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년 하반기 원자력정책연구사업 2차 공고",
+      "ancm_no": "과학기술정보통신부 공고 제2026？0859호",
+      "ancm_date": "2026-08-03",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023337','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023337",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -264,6 +280,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국환경산업기술원",
+      "title": "범부처 현장수요 신속대응 연구개발(R&D) KEITI 전담 지정 과제",
+      "ancm_no": "KE_2026_001",
+      "ancm_date": "2026-07-14",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023358','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023358",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "다부처",
       "agency": "과학치안진흥센터",
       "title": "2026년도 미래치안 도전기술 개발(융합탐색) 신규과제 공모",
@@ -295,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2027년 제18차 일본 HOPE Meeting 참가자 모집 공모",
@@ -311,7 +343,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 3차 국민생활안전 긴급대응연구(2단계) 기술개발 및 실증 신규과제 공모",
@@ -451,6 +483,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022534','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "022534",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 3,
+      "org": "과학기술정보통신부",
+      "agency": "한국과학기술기획평가원",
+      "title": "test",
+      "ancm_no": "IT_2026_002",
+      "ancm_date": "2026-05-19",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('021774','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "021774",
       "ancm_prg": "ancmIng"
     }
   ]
