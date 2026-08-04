@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04 07:16 KST",
+  "updated_at": "2026-08-05 07:21 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -8,17 +8,17 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신산업진흥원",
-      "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 재공고",
-      "ancm_no": "과학기술정보통신부 제2026-0862",
-      "ancm_date": "2026-08-03",
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "AI 응용제품 신속 상용화 지원사업 2차 신규지원 대상과제 공고",
+      "ancm_no": "산업통상부 공고 제2026-536호",
+      "ancm_date": "2026-08-04",
       "status": "공고예고",
-      "type": "지정공모",
+      "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023377','ancmPre'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023398','ancmPre'); return false;",
       "attachments": [],
-      "ancm_id": "023377",
+      "ancm_id": "023398",
       "ancm_prg": "ancmPre"
     },
     {
@@ -106,6 +106,22 @@
       "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
+      "title": "2026년 범부처 현장수요 긴급대응 연구개발사업 정책지정과제 공고",
+      "ancm_no": "NR_2026_082",
+      "ancm_date": "2026-04-16",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023399','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023399",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "한국연구재단",
       "title": "test",
       "ancm_no": "NR_2026_061",
       "ancm_date": "2026-04-14",
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "테스트",
@@ -169,6 +185,22 @@
       "tab": "접수중",
       "page_num": 1,
       "org": "과학기술정보통신부",
+      "agency": "정보통신산업진흥원",
+      "title": "2026년 「인간-AI 협업형 LAM 개발·글로벌 실증 」사업 재공고",
+      "ancm_no": "과학기술정보통신부 제2026-0862",
+      "ancm_date": "2026-08-03",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023377','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023377",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년 하반기 원자력정책연구사업 2차 공고",
       "ancm_no": "과학기술정보통신부 공고 제2026？0859호",
@@ -179,22 +211,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023337','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023337",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
-      "title": "범부처 신속대응 R&D IITP 전담 지정 과제",
-      "ancm_no": "해당없음(신속대응R&D)",
-      "ancm_date": "2026-07-30",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023317','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023317",
       "ancm_prg": "ancmIng"
     },
     {
@@ -408,22 +424,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
-      "title": "2026년도 인공지능혁신인재양성 2차 사업 공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0756호",
-      "ancm_date": "2026-07-03",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022757','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022757",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "산업통상부",
       "agency": "한국산업기술진흥원",
       "title": "2026년 산업혁신인재성장지원(해외연계) - 최고급 해외인재유치 지원사업 시행계획 추가 공고",
@@ -487,7 +487,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "test",
@@ -499,6 +499,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('021774','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "021774",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 3,
+      "org": "과학기술정보통신부",
+      "agency": "정보통신기획평가원",
+      "title": "범부처 신속대응 R&D IITP 전담 지정 과제",
+      "ancm_no": "해당없음(신속대응R&D)",
+      "ancm_date": "2026-04-16",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023317','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023317",
       "ancm_prg": "ancmIng"
     }
   ]
