@@ -26,7 +26,18 @@ jobs:
         run: |
           git config user.name "iris-monitor-bot"
           git config user.email "actions@github.com"
+
+          # 방금 새로 만든 결과 파일들을 임시로 보관해둔다
+          mkdir -p /tmp/fresh_results
+          cp -r results/. /tmp/fresh_results/
+
+          # 병합을 시도하지 않고, 원격의 최신 상태 위에 방금 만든 결과로 그대로 덮어써서 커밋한다.
+          # (결과 파일은 매번 전체를 새로 생성하는 것이라, 이전 버전과 줄 단위로 병합하려 하면
+          #  거의 항상 충돌이 나기 때문에 이 방식이 안전하다)
+          git fetch origin main
+          git reset --hard origin/main
+          cp -r /tmp/fresh_results/. results/
+
           git add results/
           git diff --cached --quiet && echo "변경 없음" || git commit -m "chore: update 공고 현황 ($(date -u +%Y-%m-%d))"
-          git pull --rebase origin main
-          git push
+          git push origin HEAD:main
