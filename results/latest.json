@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-08-11 06:56 KST",
+  "updated_at": "2026-08-12 07:02 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "한국연구재단",
+      "title": "2026년도 NRF 인터내셔널 모빌리티 신규과제 공모",
+      "ancm_no": "NR_2026_084",
+      "ancm_date": "2026-08-11",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023557','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023557",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -72,22 +88,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "AI 응용제품 신속 상용화 지원사업 2차 신규지원 대상과제 공고",
-      "ancm_no": "산업통상부 공고 제2026-536호",
-      "ancm_date": "2026-08-04",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023398','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023398",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -120,38 +120,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020654','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "020654",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -167,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년 범부처 현장수요 긴급대응 연구개발사업 정책지정과제 공고",
@@ -183,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -259,6 +227,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023457','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023457",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "AI 응용제품 신속 상용화 지원사업 2차 신규지원 대상과제 공고",
+      "ancm_no": "산업통상부 공고 제2026-536호",
+      "ancm_date": "2026-08-04",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023398','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023398",
       "ancm_prg": "ancmIng"
     },
     {
@@ -391,7 +375,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "우주항공청",
       "agency": "우주항공청",
       "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 신규과제 공고",
@@ -483,22 +467,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "022695",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 한중핵심공동연구사업(Key Joint Research Program) 신규과제 공모",
-      "ancm_no": "NR_2026_073",
-      "ancm_date": "2026-06-29",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022456','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022456",
       "ancm_prg": "ancmIng"
     },
     {
