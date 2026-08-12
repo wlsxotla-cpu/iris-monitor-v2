@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-08-12 07:02 KST",
+  "updated_at": "2026-08-13 07:00 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "디스플레이첨단산업기술개발(가칭) 기술수요조사",
-      "plan_year": "2026",
-      "period": "2026-07-31 09:00 ~ 2026-08-12 18:00",
-      "notice_date": "2026-07-31",
-      "dday": "D-0",
-      "detail_id": "000989",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000989&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -19,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-08-06 09:00 ~ 2026-08-14 23:59",
       "notice_date": "2026-08-06",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": "000996",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000996&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-08-04 09:00 ~ 2026-08-18 18:00",
       "notice_date": "2026-08-04",
-      "dday": "D-6",
+      "dday": "D-5",
       "detail_id": "000988",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000988&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -41,20 +30,9 @@
       "plan_year": "2026",
       "period": "2026-08-06 09:00 ~ 2026-08-19 23:59",
       "notice_date": "2026-08-06",
-      "dday": "D-7",
+      "dday": "D-6",
       "detail_id": "000992",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000992&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년도 산업기술 R&D사업(스마트전자 분야) 추가 기술수요조사 (연장)",
-      "plan_year": "2026",
-      "period": "2026-08-04 09:00 ~ 2026-08-21 13:00",
-      "notice_date": "2026-08-04",
-      "dday": "D-9",
-      "detail_id": "000991",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000991&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -63,9 +41,42 @@
       "plan_year": "2026",
       "period": "2026-08-06 09:00 ~ 2026-08-27 23:59",
       "notice_date": "2026-08-06",
-      "dday": "D-15",
+      "dday": "D-14",
       "detail_id": "000993",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000993&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "첨단나노상용화기술개발사업(가칭) 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
+      "notice_date": "2026-08-12",
+      "dday": "D-14",
+      "detail_id": "000997",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000997&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "피지컬 AI 적용 나노소재·공정기술 부품화 실증 사업(가칭) 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
+      "notice_date": "2026-08-12",
+      "dday": "D-14",
+      "detail_id": "000998",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000998&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "K-Carbon Specialty 기술개발 사업(가칭) 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
+      "notice_date": "2026-08-12",
+      "dday": "D-14",
+      "detail_id": "000999",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000999&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -74,7 +85,7 @@
       "plan_year": "2026",
       "period": "2026-07-22 09:00 ~ 2026-08-31 23:59",
       "notice_date": "2026-07-22",
-      "dday": "D-19",
+      "dday": "D-18",
       "detail_id": "000985",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000985&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -85,9 +96,20 @@
       "plan_year": "2026",
       "period": "2026-08-10 09:00 ~ 2026-08-31 18:00",
       "notice_date": "2026-08-10",
-      "dday": "D-19",
+      "dday": "D-18",
       "detail_id": "000990",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000990&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년도 산업기술 R&D사업(스마트전자 분야) 추가 기술수요조사 (연장)",
+      "plan_year": "2026",
+      "period": "2026-08-04 09:00 ~ 2026-08-31 13:00",
+      "notice_date": "2026-08-04",
+      "dday": "D-18",
+      "detail_id": "000991",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000991&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
   ]
 }
