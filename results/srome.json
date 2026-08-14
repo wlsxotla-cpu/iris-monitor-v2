@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-08-14 07:00 KST",
+  "updated_at": "2026-08-15 06:37 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "K-AI 자율제조 조선소 기술개발 사업기획을 위한 기술수요조사",
-      "plan_year": "2026",
-      "period": "2026-08-06 09:00 ~ 2026-08-14 23:59",
-      "notice_date": "2026-08-06",
-      "dday": "D-0",
-      "detail_id": "000996",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000996&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -19,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-08-04 09:00 ~ 2026-08-18 18:00",
       "notice_date": "2026-08-04",
-      "dday": "D-4",
+      "dday": "D-3",
       "detail_id": "000988",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000988&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-08-06 09:00 ~ 2026-08-19 23:59",
       "notice_date": "2026-08-06",
-      "dday": "D-5",
+      "dday": "D-4",
       "detail_id": "000992",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000992&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -41,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-08-06 09:00 ~ 2026-08-27 23:59",
       "notice_date": "2026-08-06",
-      "dday": "D-13",
+      "dday": "D-12",
       "detail_id": "000993",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000993&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -52,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
       "notice_date": "2026-08-12",
-      "dday": "D-13",
+      "dday": "D-12",
       "detail_id": "000997",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000997&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -63,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
       "notice_date": "2026-08-12",
-      "dday": "D-13",
+      "dday": "D-12",
       "detail_id": "000998",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000998&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -74,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-08-12 09:00 ~ 2026-08-27 18:00",
       "notice_date": "2026-08-12",
-      "dday": "D-13",
+      "dday": "D-12",
       "detail_id": "000999",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000999&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -85,7 +74,7 @@
       "plan_year": "2026",
       "period": "2026-07-22 09:00 ~ 2026-08-31 23:59",
       "notice_date": "2026-07-22",
-      "dday": "D-17",
+      "dday": "D-16",
       "detail_id": "000985",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000985&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -96,7 +85,7 @@
       "plan_year": "2026",
       "period": "2026-08-10 09:00 ~ 2026-08-31 18:00",
       "notice_date": "2026-08-10",
-      "dday": "D-17",
+      "dday": "D-16",
       "detail_id": "000990",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000990&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -107,9 +96,20 @@
       "plan_year": "2026",
       "period": "2026-08-04 09:00 ~ 2026-08-31 13:00",
       "notice_date": "2026-08-04",
-      "dday": "D-17",
+      "dday": "D-16",
       "detail_id": "000991",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000991&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "AI활용시멘트제조공정탄소배출저감기술개발사업 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-08-12 09:00 ~ 2026-08-31 18:00",
+      "notice_date": "2026-08-12",
+      "dday": "D-16",
+      "detail_id": "001000",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001000&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
   ]
 }
