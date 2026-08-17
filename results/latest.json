@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17 06:33 KST",
+  "updated_at": "2026-08-18 06:37 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -136,22 +136,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 반도체첨단산업기술개발 신규 지원대상 연구개발과제 추가 공고",
-      "ancm_no": "산업통상부 공고 제2026-525호",
-      "ancm_date": "2026-07-26",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023319",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -312,6 +296,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 반도체첨단산업기술개발 신규 지원대상 연구개발과제 추가 공고",
+      "ancm_no": "산업통상부 공고 제2026-525호",
+      "ancm_date": "2026-07-26",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023319",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 2차 에너지수요관리핵심기술개발사업 신규지원대상 연구개발과제 공고",
@@ -375,7 +375,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
