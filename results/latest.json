@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 06:37 KST",
+  "updated_at": "2026-08-21 06:41 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -136,6 +136,22 @@
     {
       "tab": "접수예정",
       "page_num": 1,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고예고",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "019508",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -376,6 +392,22 @@
     {
       "tab": "접수중",
       "page_num": 2,
+      "org": "국토교통부",
+      "agency": "국토교통과학기술진흥원",
+      "title": "(재공고-국-제29호) 2026년 국토교통연구기획 사업 제2차 시행 재공고",
+      "ancm_no": "재공고-국-제29호",
+      "ancm_date": "2026-07-17",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023697','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023697",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
       "org": "우주항공청",
       "agency": "우주항공청",
       "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 신규과제 공고",
@@ -451,22 +483,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "022695",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 한-캐나다 이공계 대학원생 연수프로그램 공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0696호",
-      "ancm_date": "2026-06-22",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022515','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022515",
       "ancm_prg": "ancmIng"
     },
     {
