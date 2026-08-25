@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-08-25 06:42 KST",
+  "updated_at": "2026-08-26 06:41 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "정보통신기획평가원",
+      "title": "2026년도 하반기 방송통신정책연구 신규지원 대상과제 공고",
+      "ancm_no": "과학기술정보통신부 제2026-0909호",
+      "ancm_date": "2026-08-25",
+      "status": "공고예고",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023817','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023817",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -67,22 +83,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "017852",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-808호",
-      "ancm_date": "2026-07-24",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023597','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023597",
       "ancm_prg": "ancmPre"
     },
     {
@@ -180,22 +180,6 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "양자정보과학 인적기반조성사업 리더급연구역량강화(연구혁신형)2026년도 한-캐나다 양자과학기술 공동연구사업 신규과제 공모",
-      "ancm_no": "NR_2026_085",
-      "ancm_date": "2026-08-20",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023640','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023640",
-      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -343,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -371,6 +355,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023319",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "기후에너지환경부",
+      "agency": "한국에너지기술평가원",
+      "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
+      "ancm_no": "기후에너지환경부 공고 제2026-808호",
+      "ancm_date": "2026-07-24",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023597','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023597",
       "ancm_prg": "ancmIng"
     },
     {
@@ -424,38 +424,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(글로벌 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020654','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "020654",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국제공동연구 신속지원사업(미국 제네시스 미션과의 협력을 위한 탐색연구) 신규과제 공모",
@@ -503,7 +471,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국인터넷진흥원",
       "title": "2026년도 범부처 현장수요 신속대응  연구개발(R&D) KISA 전담 지정 과제",
@@ -519,7 +487,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년 범부처 현장수요 긴급대응 연구개발사업 정책지정과제 공고",
