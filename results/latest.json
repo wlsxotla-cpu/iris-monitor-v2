@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-08-26 06:41 KST",
+  "updated_at": "2026-08-27 09:46 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "해양수산부",
+      "agency": "해양수산과학기술진흥원",
+      "title": "2026년도 연안하구 인간-자연시스템 관리기술 개발 사업 신규과제 선정계획 재공고",
+      "ancm_no": "해양수산부 공고 제2026-1283호",
+      "ancm_date": "2026-08-26",
+      "status": "공고예고",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023757','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "023757",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국산업기술진흥원",
       "title": "2026년도 10대 메가프로젝트 기술산업화 사업공고",
@@ -376,22 +392,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 NCP활동지원사업 신규과제 2차 공모",
-      "ancm_no": "과학기술정보통신부 제2026-0817호",
-      "ancm_date": "2026-07-24",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023157','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023157",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "국토교통부",
       "agency": "국토교통과학기술진흥원",
       "title": "(재공고-국-제29호) 2026년 국토교통연구기획 사업 제2차 시행 재공고",
@@ -503,7 +503,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "우주항공청",
       "agency": "우주항공청",
       "title": "2026년도 신규프로젝트 탐색연구 2차 공고",
