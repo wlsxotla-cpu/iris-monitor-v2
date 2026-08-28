@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27 09:46 KST",
+  "updated_at": "2026-08-28 14:21 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -27,7 +27,7 @@
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 하반기 방송통신정책연구 신규지원 대상과제 공고",
-      "ancm_no": "과학기술정보통신부 제2026-0909호",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0909호",
       "ancm_date": "2026-08-25",
       "status": "공고예고",
       "type": "지정공모",
@@ -104,22 +104,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "019508",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국산업기술진흥원",
       "title": "2026년도 10대 메가프로젝트 기술산업화 사업공고",
@@ -328,22 +312,6 @@
     {
       "tab": "접수중",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 제3차 산업기술R&D연구기획사업 신규지원 대상과제 공고",
-      "ancm_no": "산업통상부 공고 제2026-521호",
-      "ancm_date": "2026-07-29",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023137','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023137",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -359,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "산업통상부",
       "agency": "한국산업기술기획평가원",
       "title": "2026년도 반도체첨단산업기술개발 신규 지원대상 연구개발과제 추가 공고",
@@ -392,22 +360,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "국토교통부",
-      "agency": "국토교통과학기술진흥원",
-      "title": "(재공고-국-제29호) 2026년 국토교통연구기획 사업 제2차 시행 재공고",
-      "ancm_no": "재공고-국-제29호",
-      "ancm_date": "2026-07-17",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023697','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023697",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "우주항공청",
       "agency": "우주항공청",
       "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 신규과제 공고",
@@ -424,6 +376,22 @@
     {
       "tab": "접수중",
       "page_num": 2,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "019508",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국제공동연구 신속지원사업(미국 제네시스 미션과의 협력을 위한 탐색연구) 신규과제 공모",
@@ -435,22 +403,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023018','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023018",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "산업통상부",
-      "agency": "한국산업기술진흥원",
-      "title": "2026년 산업혁신인재성장지원(해외연계) - 최고급 해외인재유치 지원사업 시행계획 추가 공고",
-      "ancm_no": "KI_2026_009",
-      "ancm_date": "2026-06-30",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022695','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022695",
       "ancm_prg": "ancmIng"
     },
     {
