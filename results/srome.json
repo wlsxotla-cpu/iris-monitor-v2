@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 14:21 KST",
+  "updated_at": "2026-08-29 12:09 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-07-22 09:00 ~ 2026-08-31 23:59",
       "notice_date": "2026-07-22",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "000985",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000985&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-08-10 09:00 ~ 2026-08-31 18:00",
       "notice_date": "2026-08-10",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "000990",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000990&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-08-04 09:00 ~ 2026-08-31 13:00",
       "notice_date": "2026-08-04",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "000991",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000991&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-08-12 09:00 ~ 2026-08-31 18:00",
       "notice_date": "2026-08-12",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "001000",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001000&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-08-19 09:00 ~ 2026-09-04 18:00",
       "notice_date": "2026-08-19",
-      "dday": "D-7",
+      "dday": "D-6",
       "detail_id": "001002",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001002&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -63,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-08-20 09:00 ~ 2026-09-11 18:00",
       "notice_date": "2026-08-20",
-      "dday": "D-14",
+      "dday": "D-13",
       "detail_id": "001003",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001003&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -74,7 +74,7 @@
       "plan_year": "2026",
       "period": "2026-08-21 09:00 ~ 2026-09-18 18:00",
       "notice_date": "2026-08-21",
-      "dday": "D-21",
+      "dday": "D-20",
       "detail_id": "001001",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001001&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }

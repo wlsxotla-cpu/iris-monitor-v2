@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 14:21 KST",
+  "updated_at": "2026-08-29 12:09 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -296,22 +296,6 @@
     {
       "tab": "접수중",
       "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "표준공정 기반 공정최적화 기술개발사업(공정최적화R&D) 시행계획 공고",
-      "ancm_no": "중소벤처기업부 공고 제2026-484호",
-      "ancm_date": "2026-07-30",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023077','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023077",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -343,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
@@ -435,22 +419,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023477','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023477",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년 범부처 현장수요 긴급대응 연구개발사업 정책지정과제 공고",
-      "ancm_no": "NR_2026_082",
-      "ancm_date": "2026-04-16",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023399','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023399",
       "ancm_prg": "ancmIng"
     },
     {
