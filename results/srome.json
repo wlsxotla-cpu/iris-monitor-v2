@@ -1,50 +1,6 @@
 {
-  "updated_at": "2026-08-31 08:27 KST",
+  "updated_at": "2026-09-01 09:36 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년 자동차 분야 산업기술 R&D 기술수요조사 공고",
-      "plan_year": "2026",
-      "period": "2026-07-22 09:00 ~ 2026-08-31 23:59",
-      "notice_date": "2026-07-22",
-      "dday": "D-0",
-      "detail_id": "000985",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000985&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년 행정안전부 재난안전 R&D 기술수요조사 공고",
-      "plan_year": "2026",
-      "period": "2026-08-10 09:00 ~ 2026-08-31 18:00",
-      "notice_date": "2026-08-10",
-      "dday": "D-0",
-      "detail_id": "000990",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000990&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년도 산업기술 R&D사업(스마트전자 분야) 추가 기술수요조사 (연장)",
-      "plan_year": "2026",
-      "period": "2026-08-04 09:00 ~ 2026-08-31 13:00",
-      "notice_date": "2026-08-04",
-      "dday": "D-0",
-      "detail_id": "000991",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000991&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "AI활용시멘트제조공정탄소배출저감기술개발사업 기술수요조사 공고",
-      "plan_year": "2026",
-      "period": "2026-08-12 09:00 ~ 2026-08-31 18:00",
-      "notice_date": "2026-08-12",
-      "dday": "D-0",
-      "detail_id": "001000",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001000&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -52,9 +8,31 @@
       "plan_year": "2026",
       "period": "2026-08-19 09:00 ~ 2026-09-04 18:00",
       "notice_date": "2026-08-19",
-      "dday": "D-4",
+      "dday": "D-3",
       "detail_id": "001002",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001002&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "디스플레이첨단산업기술개발(가칭) 기술수요조사(연장)",
+      "plan_year": "2026",
+      "period": "2026-08-31 09:00 ~ 2026-09-07 18:00",
+      "notice_date": "2026-08-31",
+      "dday": "D-6",
+      "detail_id": "001006",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001006&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년도 화학공정 분야  「K-화학산업 대전환 혁신 기술개발사업」 신규 과제 기획을 위한 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-09-01 09:00 ~ 2026-09-10 18:00",
+      "notice_date": "2026-08-31",
+      "dday": "D-9",
+      "detail_id": "000995",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000995&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -63,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-08-20 09:00 ~ 2026-09-11 18:00",
       "notice_date": "2026-08-20",
-      "dday": "D-11",
+      "dday": "D-10",
       "detail_id": "001003",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001003&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -74,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-08-21 09:00 ~ 2026-09-18 18:00",
       "notice_date": "2026-08-21",
-      "dday": "D-18",
+      "dday": "D-17",
       "detail_id": "001001",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001001&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
