@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01 09:36 KST",
+  "updated_at": "2026-09-02 08:16 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-08-19 09:00 ~ 2026-09-04 18:00",
       "notice_date": "2026-08-19",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "001002",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001002&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-08-31 09:00 ~ 2026-09-07 18:00",
       "notice_date": "2026-08-31",
-      "dday": "D-6",
+      "dday": "D-5",
       "detail_id": "001006",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001006&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-09-01 09:00 ~ 2026-09-10 18:00",
       "notice_date": "2026-08-31",
-      "dday": "D-9",
+      "dday": "D-8",
       "detail_id": "000995",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000995&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-08-20 09:00 ~ 2026-09-11 18:00",
       "notice_date": "2026-08-20",
-      "dday": "D-10",
+      "dday": "D-9",
       "detail_id": "001003",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001003&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-08-21 09:00 ~ 2026-09-18 18:00",
       "notice_date": "2026-08-21",
-      "dday": "D-17",
+      "dday": "D-16",
       "detail_id": "001001",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001001&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }

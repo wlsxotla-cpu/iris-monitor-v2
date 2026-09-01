@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01 09:36 KST",
+  "updated_at": "2026-09-02 08:16 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -19,22 +19,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023978','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "023978",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "",
-      "agency": "정보통신기획평가원",
-      "title": "2026년도 제3차 디지털혁신기술국제공동연구 신규지원 대상과제 공고",
-      "ancm_no": "0000",
-      "ancm_date": "2026-09-01",
-      "status": "공고예고",
-      "type": "미등록",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023897','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023897",
       "ancm_prg": "ancmPre"
     },
     {
@@ -88,22 +72,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "해양수산부",
-      "agency": "해양수산과학기술진흥원",
-      "title": "2026년도 연안하구 인간-자연시스템 관리기술 개발 사업 신규과제 선정계획 재공고",
-      "ancm_no": "해양수산부 공고 제2026-1283호",
-      "ancm_date": "2026-08-26",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023757','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023757",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 하반기 방송통신정책연구 신규지원 대상과제 공고",
@@ -140,7 +108,7 @@
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
       "ancm_no": "IT_2026_001",
-      "ancm_date": "2026-07-29",
+      "ancm_date": "2026-07-28",
       "status": "공고예고",
       "type": "자유공모,정책지정공모",
       "detail_url": null,
@@ -167,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -183,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -243,6 +211,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023640','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023640",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "해양수산부",
+      "agency": "해양수산과학기술진흥원",
+      "title": "2026년도 연안하구 인간-자연시스템 관리기술 개발 사업 신규과제 선정계획 재공고",
+      "ancm_no": "해양수산부 공고 제2026-1283호",
+      "ancm_date": "2026-08-26",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023757','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023757",
       "ancm_prg": "ancmIng"
     },
     {
@@ -375,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "산업통상부",
       "agency": "한국산업기술기획평가원",
       "title": "AI 응용제품 신속 상용화 지원사업 2차 신규지원 대상과제 공고(수정)",
@@ -396,29 +380,13 @@
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
       "ancm_no": "IT_2026_001",
-      "ancm_date": "2026-07-29",
+      "ancm_date": "2026-07-28",
       "status": "공고접수중",
       "type": "자유공모,정책지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "017852",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 반도체첨단산업기술개발 신규 지원대상 연구개발과제 추가 공고",
-      "ancm_no": "산업통상부 공고 제2026-525호",
-      "ancm_date": "2026-07-26",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023319','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023319",
       "ancm_prg": "ancmIng"
     },
     {
