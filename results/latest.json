@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03 08:17 KST",
+  "updated_at": "2026-09-04 08:15 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -248,6 +248,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "기후에너지환경부",
+      "agency": "한국에너지기술평가원",
+      "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
+      "ancm_no": "기후에너지환경부 공고 제2026-808호",
+      "ancm_date": "2026-08-19",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023597','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023597",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
@@ -343,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 4차 국민생활안전 긴급대응연구(2단계) 기술개발 및 실증 신규과제 공모",
@@ -360,22 +376,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "AI 응용제품 신속 상용화 지원사업 2차 신규지원 대상과제 공고(수정)",
-      "ancm_no": "산업통상부 공고 제2026-550호",
-      "ancm_date": "2026-08-04",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023398','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023398",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -387,22 +387,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "017852",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-808호",
-      "ancm_date": "2026-07-24",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023597','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023597",
       "ancm_prg": "ancmIng"
     },
     {
