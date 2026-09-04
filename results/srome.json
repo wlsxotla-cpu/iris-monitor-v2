@@ -1,17 +1,6 @@
 {
-  "updated_at": "2026-09-04 08:15 KST",
+  "updated_at": "2026-09-05 08:02 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "(가칭)PFAS 규제대응 핵심기술개발 기술수요조사",
-      "plan_year": "2026",
-      "period": "2026-08-19 09:00 ~ 2026-09-04 18:00",
-      "notice_date": "2026-08-19",
-      "dday": "D-0",
-      "detail_id": "001002",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001002&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -19,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-08-31 09:00 ~ 2026-09-07 18:00",
       "notice_date": "2026-08-31",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": "001006",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001006&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-09-01 09:00 ~ 2026-09-10 18:00",
       "notice_date": "2026-08-31",
-      "dday": "D-6",
+      "dday": "D-5",
       "detail_id": "000995",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=000995&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -41,9 +30,20 @@
       "plan_year": "2026",
       "period": "2026-08-20 09:00 ~ 2026-09-11 18:00",
       "notice_date": "2026-08-20",
-      "dday": "D-7",
+      "dday": "D-6",
       "detail_id": "001003",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001003&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년도 자원분야 R&D사업 통합기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-09-04 09:00 ~ 2026-09-14 18:00",
+      "notice_date": "2026-09-01",
+      "dday": "D-9",
+      "detail_id": "001007",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001007&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-08-21 09:00 ~ 2026-09-18 18:00",
       "notice_date": "2026-08-21",
-      "dday": "D-14",
+      "dday": "D-13",
       "detail_id": "001001",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001001&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -63,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-09-03 09:00 ~ 2026-09-30 23:59",
       "notice_date": "2026-09-03",
-      "dday": "D-26",
+      "dday": "D-25",
       "detail_id": "001008",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001008&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 08:15 KST",
+  "updated_at": "2026-09-05 08:02 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -110,7 +110,7 @@
       "ancm_no": "IT_2026_001",
       "ancm_date": "2026-07-28",
       "status": "공고예고",
-      "type": "자유공모,정책지정공모",
+      "type": "분야공모,자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmPre'); return false;",
       "attachments": [],
@@ -382,7 +382,7 @@
       "ancm_no": "IT_2026_001",
       "ancm_date": "2026-07-28",
       "status": "공고접수중",
-      "type": "자유공모,정책지정공모",
+      "type": "분야공모,자유공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
       "attachments": [],
@@ -403,22 +403,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "019508",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2027년도 한-일(JSPS) 협력사업 신규과제 공모(협력연구·공동세미나)",
-      "ancm_no": "NR_2026_074",
-      "ancm_date": "2026-06-10",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('022534','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "022534",
       "ancm_prg": "ancmIng"
     },
     {
