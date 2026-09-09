@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 08:22 KST",
+  "updated_at": "2026-09-10 08:12 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -9,16 +9,16 @@
       "tab": "접수예정",
       "page_num": 1,
       "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 가속기핵심기술개발사업 신규과제 재공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0934호",
-      "ancm_date": "2026-09-08",
+      "agency": "정보통신기획평가원",
+      "title": "2026년도 제3차 디지털혁신기술국제공동연구 신규지원 대상과제 공고",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0939호",
+      "ancm_date": "2026-09-09",
       "status": "공고예고",
       "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024117','ancmPre'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023897','ancmPre'); return false;",
       "attachments": [],
-      "ancm_id": "024117",
+      "ancm_id": "023897",
       "ancm_prg": "ancmPre"
     },
     {
@@ -200,6 +200,38 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "우주항공청",
+      "agency": "우주항공청",
+      "title": "2026년도 우주기술혁신인재양성(R&D)사업[우주항공 글로벌 인력양성 및 활용] 2차 추가공고",
+      "ancm_no": "우주항공청 공고 제2026-0104호",
+      "ancm_date": "2026-09-09",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024137','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024137",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 가속기핵심기술개발사업 신규과제 재공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0934호",
+      "ancm_date": "2026-09-08",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024117','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024117",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 산업기술R&D연구기획사업 신규지원대상 연구개발과제 공고",
@@ -243,22 +275,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023640','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023640",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "해양수산부",
-      "agency": "해양수산과학기술진흥원",
-      "title": "2026년도 연안하구 인간-자연시스템 관리기술 개발 사업 신규과제 선정계획 재공고",
-      "ancm_no": "해양수산부 공고 제2026-1283호",
-      "ancm_date": "2026-08-26",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023757','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023757",
       "ancm_prg": "ancmIng"
     },
     {
@@ -343,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 NRF 인터내셔널 모빌리티 신규과제 공모",
@@ -355,22 +371,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023557','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023557",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 기계장비산업기술개발사업 신규지원 대상과제 2차 공고",
-      "ancm_no": "산업통상부 공고 제2026-540호",
-      "ancm_date": "2026-08-10",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023537','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023537",
       "ancm_prg": "ancmIng"
     },
     {
