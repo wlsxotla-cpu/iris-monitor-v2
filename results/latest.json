@@ -1,10 +1,58 @@
 {
-  "updated_at": "2026-09-10 08:12 KST",
+  "updated_at": "2026-09-11 08:08 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "연구개발특구진흥재단",
+      "title": "2026년 4극3특 호남권 과학기술혁신지원사업 연구단 모집 공고",
+      "ancm_no": "IN_2026_052",
+      "ancm_date": "2026-09-11",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024160','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024160",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "연구개발특구진흥재단",
+      "title": "2026년 4극3특 중부권 과학기술혁신지원사업 연구단 모집 공고",
+      "ancm_no": "IN_2026_049",
+      "ancm_date": "2026-09-11",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024139','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024139",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년 국가과학자지원사업(리더급 국가과학기술자) 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0945호",
+      "ancm_date": "2026-09-11",
+      "status": "공고예고",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024017','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024017",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -119,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -135,7 +183,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -151,7 +199,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -196,6 +244,54 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "연구개발특구진흥재단",
+      "title": "2026년 4극3특 전북특별자치도 과학기술혁신지원사업 연구단 모집",
+      "ancm_no": "IN_2026_051",
+      "ancm_date": "2026-09-11",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024159','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024159",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "연구개발특구진흥재단",
+      "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고",
+      "ancm_no": "IN_2026_050",
+      "ancm_date": "2026-09-11",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024158','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024158",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "연구개발특구진흥재단",
+      "title": "2026년 4극3특 강원특별자치도 과학기술혁신지원사업 연구단 모집공고",
+      "ancm_no": "IN_2026_048",
+      "ancm_date": "2026-09-11",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024138','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024138",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -311,7 +407,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
@@ -327,7 +423,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
@@ -343,7 +439,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "산업통상부",
       "agency": "한국산업기술기획평가원",
       "title": "2026년도 제2차 로봇산업기술개발사업 신규지원 대상과제 공고",
