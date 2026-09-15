@@ -1,26 +1,10 @@
 {
-  "updated_at": "2026-09-15 08:51 KST",
+  "updated_at": "2026-09-16 08:31 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "보건복지부",
-      "agency": "한국보건산업진흥원",
-      "title": "2026년도 제4차 첨단재생의료 임상연구 활성화 지원 사업 신규과제 공고",
-      "ancm_no": "첨단재생의료임상연구활성화지원사업단 공고 제2026-04호",
-      "ancm_date": "2026-09-15",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024077','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024077",
-      "ancm_prg": "ancmPre"
-    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -75,7 +59,7 @@
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 미래개척융합과학기술개발사업 신규과제 제4차 공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026？？？0935호",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0935호",
       "ancm_date": "2026-09-08",
       "status": "공고예고",
       "type": "품목지정공모",
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -244,6 +228,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "보건복지부",
+      "agency": "한국보건산업진흥원",
+      "title": "2026년도 제4차 첨단재생의료 임상연구 활성화 지원 사업 신규과제 공고",
+      "ancm_no": "첨단재생의료임상연구활성화지원사업단 공고 제2026-04호",
+      "ancm_date": "2026-09-15",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024077','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024077",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -391,7 +391,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
       "title": "2026년도 제3차 디지털혁신기술국제공동연구 신규지원 대상과제 공고",
@@ -551,7 +551,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
