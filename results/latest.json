@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 08:32 KST",
+  "updated_at": "2026-09-19 08:16 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -408,22 +408,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 가속기핵심기술개발사업 신규과제 재공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0934호",
-      "ancm_date": "2026-09-08",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024117','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024117",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 산업기술R&D연구기획사업 신규지원대상 연구개발과제 공고",
@@ -520,38 +504,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 2차 신재생에너지R&D(수소) 신규지원대상 연구개발과제 재공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-808호",
-      "ancm_date": "2026-08-19",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023597','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023597",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 3,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
-      "title": "(연장공고) 2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0876호",
-      "ancm_date": "2026-08-13",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023617','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023617",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -567,7 +519,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 3,
+      "page_num": 2,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",

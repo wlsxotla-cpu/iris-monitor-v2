@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18 08:32 KST",
+  "updated_at": "2026-09-19 08:16 KST",
   "items": [
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년 소방안전R&D 통합 기술수요조사",
-      "plan_year": "2026",
-      "period": "2026-08-21 09:00 ~ 2026-09-18 18:00",
-      "notice_date": "2026-08-21",
-      "dday": "D-0",
-      "detail_id": "001001",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001001&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "2027년도 소재부품기술개발사업 기술수요조사 공고(연장)",
-      "plan_year": "2026",
-      "period": "2026-08-20 09:00 ~ 2026-09-18 18:00",
-      "notice_date": "2026-08-20",
-      "dday": "D-0",
-      "detail_id": "001003",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001003&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "수요조사",
-      "status": "접수중",
-      "title": "국가 제조데이터 라이브러리 구축운영 사업 기획을 위한 수요조사",
-      "plan_year": "2026",
-      "period": "2026-09-07 09:00 ~ 2026-09-18 23:59",
-      "notice_date": "2026-08-20",
-      "dday": "D-0",
-      "detail_id": "001004",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001004&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
     {
       "category": "수요조사",
       "status": "접수중",
@@ -41,9 +8,20 @@
       "plan_year": "2026",
       "period": "2026-09-03 09:00 ~ 2026-09-30 23:59",
       "notice_date": "2026-09-03",
-      "dday": "D-12",
+      "dday": "D-11",
       "detail_id": "001008",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001008&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "국가 제조데이터 라이브러리 구축운영 사업 기획을 위한 수요조사",
+      "plan_year": "2026",
+      "period": "2026-09-07 09:00 ~ 2026-10-16 23:59",
+      "notice_date": "2026-08-20",
+      "dday": "D-27",
+      "detail_id": "001004",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001004&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
   ]
 }
