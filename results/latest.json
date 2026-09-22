@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 09:04 KST",
+  "updated_at": "2026-09-23 08:35 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -35,22 +35,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024198','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024198",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 미래개척융합과학기술개발사업 신규과제 제4차 공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0935호",
-      "ancm_date": "2026-09-08",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024097','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024097",
       "ancm_prg": "ancmPre"
     },
     {
@@ -115,6 +99,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "017852",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "019614",
       "ancm_prg": "ancmPre"
     },
     {
@@ -196,6 +196,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 소재부품기술개발사업(4차) 신규지원 대상과제 공고",
+      "ancm_no": "산업통상부 공고 제2026-613호",
+      "ancm_date": "2026-09-22",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024237','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024237",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -343,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국가과학자지원사업(리더급 국가과학기술자) 공모",
@@ -387,6 +403,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023897','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023897",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 미래개척융합과학기술개발사업 신규과제 제4차 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-0935호",
+      "ancm_date": "2026-09-08",
+      "status": "공고접수중",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024097','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024097",
       "ancm_prg": "ancmIng"
     },
     {
@@ -487,7 +519,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -503,7 +535,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
