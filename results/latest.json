@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-09-28 08:48 KST",
+  "updated_at": "2026-09-29 09:58 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "기후에너지환경부",
+      "agency": "한국에너지공단",
+      "title": "2026년 3차 전력정보화 및 정책지원사업(재생에너지분야) 신규지원 대상과제 공고",
+      "ancm_no": "기후에너지환경부 공고 제2026-909호",
+      "ancm_date": "2026-09-29",
+      "status": "공고예고",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024277','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024277",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국산업기술진흥원",
       "title": "2026년도 10대 메가프로젝트 기술산업화 사업공고",
