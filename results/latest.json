@@ -1,10 +1,42 @@
 {
-  "updated_at": "2026-10-05 08:56 KST",
+  "updated_at": "2026-10-06 10:45 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 퀀텀(양자)플랫폼 KRISS 차세대양자연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
+      "ancm_no": "NR_2026_089",
+      "ancm_date": "2026-10-06",
+      "status": "공고예고",
+      "type": "분야공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024337','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024337",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 퀀텀(양자)플랫폼 KIST 양자활용연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
+      "ancm_no": "제2026-0985호",
+      "ancm_date": "2026-10-06",
+      "status": "공고예고",
+      "type": "분야공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024317','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024317",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -135,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "테스트",
@@ -148,6 +180,22 @@
       "attachments": [],
       "ancm_id": "016854",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "행정안전부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 지역맞춤형 재난안전 문제해결 기술개발 지원(2단계) 신규과제 재공모",
+      "ancm_no": "행정안전부 공고 제2026-1233호",
+      "ancm_date": "2026-10-06",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024357','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024357",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -295,7 +343,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고",
@@ -455,7 +503,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
