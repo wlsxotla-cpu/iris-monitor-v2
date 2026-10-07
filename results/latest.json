@@ -1,42 +1,10 @@
 {
-  "updated_at": "2026-10-06 10:45 KST",
+  "updated_at": "2026-10-07 09:39 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 퀀텀(양자)플랫폼 KRISS 차세대양자연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
-      "ancm_no": "NR_2026_089",
-      "ancm_date": "2026-10-06",
-      "status": "공고예고",
-      "type": "분야공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024337','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024337",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 퀀텀(양자)플랫폼 KIST 양자활용연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
-      "ancm_no": "제2026-0985호",
-      "ancm_date": "2026-10-06",
-      "status": "공고예고",
-      "type": "분야공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024317','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024317",
-      "ancm_prg": "ancmPre"
-    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -167,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "테스트",
@@ -195,6 +163,38 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024357','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024357",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 퀀텀(양자)플랫폼 KRISS 차세대양자연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
+      "ancm_no": "제2026-0986호",
+      "ancm_date": "2026-10-06",
+      "status": "공고접수중",
+      "type": "분야공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024337','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024337",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 퀀텀(양자)플랫폼 KIST 양자활용연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
+      "ancm_no": "제2026-0985호",
+      "ancm_date": "2026-10-06",
+      "status": "공고접수중",
+      "type": "분야공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024317','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024317",
       "ancm_prg": "ancmIng"
     },
     {
@@ -311,7 +311,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 호남권 과학기술혁신지원사업 연구단 모집 공고",
@@ -327,7 +327,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 전북특별자치도 과학기술혁신지원사업 연구단 모집",
@@ -471,7 +471,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "중소제조 특화 Multi AI Agent 개발(R&D) 점프업 Track 시행계획 공고",
@@ -487,7 +487,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 3,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "양자정보과학 인적기반조성사업 리더급연구역량강화(연구혁신형)2026년도 한-캐나다 양자과학기술 공동연구사업 신규과제 공모",
