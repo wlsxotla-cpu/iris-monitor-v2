@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07 09:39 KST",
+  "updated_at": "2026-10-08 09:58 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -99,6 +99,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "020160",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(일반트랙)",
+      "ancm_no": "중소벤처기업부 제2026 -188호",
+      "ancm_date": "2026-03-19",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020159','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "020159",
       "ancm_prg": "ancmPre"
     },
     {
@@ -456,22 +472,6 @@
     {
       "tab": "접수중",
       "page_num": 2,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 산업기술R&D연구기획사업 신규지원대상 연구개발과제 공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-840호",
-      "ancm_date": "2026-09-07",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023977','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023977",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 3,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "중소제조 특화 Multi AI Agent 개발(R&D) 점프업 Track 시행계획 공고",
@@ -483,22 +483,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('023857','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "023857",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 3,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "양자정보과학 인적기반조성사업 리더급연구역량강화(연구혁신형)2026년도 한-캐나다 양자과학기술 공동연구사업 신규과제 공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0899호",
-      "ancm_date": "2026-08-31",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023640','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023640",
       "ancm_prg": "ancmIng"
     },
     {
