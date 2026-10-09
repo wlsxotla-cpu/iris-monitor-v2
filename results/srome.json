@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08 09:58 KST",
+  "updated_at": "2026-10-09 10:11 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-09-29 09:00 ~ 2026-10-12 18:00",
       "notice_date": "2026-09-23",
-      "dday": "D-4",
+      "dday": "D-3",
       "detail_id": "001009",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001009&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-10-02 09:00 ~ 2026-10-15 23:59",
       "notice_date": "2026-10-02",
-      "dday": "D-7",
+      "dday": "D-6",
       "detail_id": "001012",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001012&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -30,9 +30,20 @@
       "plan_year": "2026",
       "period": "2026-09-07 09:00 ~ 2026-10-16 23:59",
       "notice_date": "2026-08-20",
-      "dday": "D-8",
+      "dday": "D-7",
       "detail_id": "001004",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001004&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년도 제품안전관리기술개발및실증사업 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-10-08 09:00 ~ 2026-11-06 23:59",
+      "notice_date": "2026-10-08",
+      "dday": "D-28",
+      "detail_id": "001013",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001013&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
   ]
 }
