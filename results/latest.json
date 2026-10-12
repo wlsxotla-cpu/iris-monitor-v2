@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11 09:13 KST",
+  "updated_at": "2026-10-12 09:30 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -104,38 +104,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(딥테크트랙)",
-      "ancm_no": "중소벤처기업부 제2026 -188호",
-      "ancm_date": "2026-03-19",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "020160",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(일반트랙)",
-      "ancm_no": "중소벤처기업부 제2026 -188호",
-      "ancm_date": "2026-03-19",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('020159','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "020159",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "2026년도 의료용 방사성동위원소 생산기술 및 시스템 고도화사업 신규과제(정책지정) 연구개발계획서 접수",
@@ -167,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "테스트",
@@ -330,22 +298,6 @@
       "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 동남권 과학기술혁신지원사업 연구단 모집 공고(발표평가 안내 추가)",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
-      "ancm_date": "2026-09-11",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024177','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024177",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 호남권 과학기술혁신지원사업 연구단 모집 공고",
       "ancm_no": "IN_2026_052",
       "ancm_date": "2026-09-11",
@@ -403,22 +355,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024139','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024139",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 강원특별자치도 과학기술혁신지원사업 연구단 모집공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026 ？ 0948호",
-      "ancm_date": "2026-09-11",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024138','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024138",
       "ancm_prg": "ancmIng"
     },
     {
@@ -483,6 +419,38 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('019508','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "019508",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(딥테크트랙)",
+      "ancm_no": "중소벤처기업부 제2026 -188호",
+      "ancm_date": "2026-03-19",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020160','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "020160",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년 팁스(TIPS) 창업기업 지원계획 수정 공고(일반트랙)",
+      "ancm_no": "중소벤처기업부 제2026 -188호",
+      "ancm_date": "2026-03-19",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('020159','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "020159",
       "ancm_prg": "ancmIng"
     }
   ]
