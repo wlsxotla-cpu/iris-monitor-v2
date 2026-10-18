@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18 08:06 KST",
+  "updated_at": "2026-10-19 08:07 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-10-08 09:00 ~ 2026-11-06 23:59",
       "notice_date": "2026-10-08",
-      "dday": "D-19",
+      "dday": "D-18",
       "detail_id": "001013",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001013&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
@@ -19,20 +19,9 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-74",
+      "dday": "D-73",
       "detail_id": "001018",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001018&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
-    },
-    {
-      "category": "인터넷공시",
-      "status": "접수중",
-      "title": "2026년도 제3차 기계장비산업기술개발사업 기획대상과제 인터넷공시",
-      "plan_year": "2026",
-      "period": "2026-10-16 09:00 ~ 2026-10-18 18:00",
-      "notice_date": "2026-10-14",
-      "dday": "D-0",
-      "detail_id": "001016",
-      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001016&prgmId=XPG201020000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
   ]
 }
