@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 09:18 KST",
+  "updated_at": "2026-10-21 08:50 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -35,6 +35,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024438','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024438",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "한국기상산업기술원",
+      "title": "fsdfsdf",
+      "ancm_no": "KM_2026_001",
+      "ancm_date": "2026-10-13",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024537','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024537",
       "ancm_prg": "ancmPre"
     },
     {
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -265,38 +281,6 @@
       "tab": "접수중",
       "page_num": 1,
       "org": "과학기술정보통신부",
-      "agency": "과학기술사업화진흥원",
-      "title": "2026년 연구산업육성사업(투자연계형 연구산업 혁신기술 개발) 본과제 신청 공고",
-      "ancm_no": "CP_2026_009",
-      "ancm_date": "2026-10-12",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024419','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024419",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "행정안전부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 지역맞춤형 재난안전 문제해결 기술개발 지원(2단계) 신규과제 재공모",
-      "ancm_no": "행정안전부 공고 제2026-1233호",
-      "ancm_date": "2026-10-06",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024357','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024357",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 퀀텀(양자)플랫폼 KRISS 차세대양자연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
       "ancm_no": "제2026-0986호",
@@ -323,22 +307,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024317','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024317",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지공단",
-      "title": "2026년 3차 전력정보화 및 정책지원사업(재생에너지분야) 신규지원 대상과제 공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-909호",
-      "ancm_date": "2026-09-29",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024277','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024277",
       "ancm_prg": "ancmIng"
     },
     {
@@ -375,7 +343,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 동남권 과학기술혁신지원사업 연구단 모집 공고(연장)",
@@ -391,7 +359,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 호남권 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
@@ -407,7 +375,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
@@ -435,22 +403,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024139','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024139",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "우주항공청",
-      "agency": "우주항공청",
-      "title": "2026년도 우주기술혁신인재양성(R&D)사업[우주항공 글로벌 인력양성 및 활용] 2차 추가공고",
-      "ancm_no": "우주항공청 공고 제2026-0104호",
-      "ancm_date": "2026-09-09",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024137','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024137",
       "ancm_prg": "ancmIng"
     },
     {
