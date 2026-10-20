@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 08:07 KST",
+  "updated_at": "2026-10-20 09:18 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -67,22 +67,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024037','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024037",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "기후에너지환경부",
-      "agency": "한국에너지기술평가원",
-      "title": "2026년도 에너지기술 수용성 제고 및 사업화 촉진 사업 신규지원 대상 연구개발과제 공고",
-      "ancm_no": "기후에너지환경부 공고 제2026-933호",
-      "ancm_date": "2026-10-12",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024457','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024457",
       "ancm_prg": "ancmPre"
     },
     {
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -248,17 +232,17 @@
     {
       "tab": "접수중",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 강원특별자치도 과학기술혁신지원사업 연구단 모집공고(연장공고)",
-      "ancm_no": "과학기술정보통신부 공고 제2026 ？ 0948호",
-      "ancm_date": "2026-10-13",
+      "org": "기후에너지환경부",
+      "agency": "한국에너지기술평가원",
+      "title": "2026년도 에너지기술 수용성 제고 및 사업화 촉진 사업 신규지원 대상 연구개발과제 공고",
+      "ancm_no": "기후에너지환경부 공고 제2026-933호",
+      "ancm_date": "2026-10-12",
       "status": "공고접수중",
-      "type": "자유공모",
+      "type": "품목지정공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024138','ancmIng'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024457','ancmIng'); return false;",
       "attachments": [],
-      "ancm_id": "024138",
+      "ancm_id": "024457",
       "ancm_prg": "ancmIng"
     },
     {
@@ -451,6 +435,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024139','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024139",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "우주항공청",
+      "agency": "우주항공청",
+      "title": "2026년도 우주기술혁신인재양성(R&D)사업[우주항공 글로벌 인력양성 및 활용] 2차 추가공고",
+      "ancm_no": "우주항공청 공고 제2026-0104호",
+      "ancm_date": "2026-09-09",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024137','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024137",
       "ancm_prg": "ancmIng"
     },
     {

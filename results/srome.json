@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 08:07 KST",
+  "updated_at": "2026-10-20 09:18 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,9 +8,31 @@
       "plan_year": "2026",
       "period": "2026-10-08 09:00 ~ 2026-11-06 23:59",
       "notice_date": "2026-10-08",
-      "dday": "D-18",
+      "dday": "D-17",
       "detail_id": "001013",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001013&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년 제1차 국가표준기술력향상사업 수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-10-19 09:00 ~ 2026-11-06 18:00",
+      "notice_date": "2026-10-19",
+      "dday": "D-17",
+      "detail_id": "001014",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001014&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년도 제조공급망강화표준물질개발사업 기술수요조사 공고",
+      "plan_year": "2026",
+      "period": "2026-10-19 09:00 ~ 2026-11-06 18:00",
+      "notice_date": "2026-10-08",
+      "dday": "D-17",
+      "detail_id": "001015",
+      "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001015&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     },
     {
       "category": "수요조사",
@@ -19,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-73",
+      "dday": "D-72",
       "detail_id": "001018",
       "detail_url": "https://srome.keit.re.kr/srome/biz/perform/opnnPrpsl/retrieveRndPlnnDtlView.do?pageIndex=&sbjtPlnnAncmId=001018&prgmId=XPG201010000&searchItem=title&searchItemContent=&searchDmndYear=&searchRcptStDt=&searchRcptEdDt=&rcveSe=02"
     }
