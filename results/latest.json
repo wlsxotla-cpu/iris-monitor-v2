@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 08:50 KST",
+  "updated_at": "2026-10-22 08:59 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -312,22 +312,6 @@
     {
       "tab": "접수중",
       "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 소재부품기술개발사업(4차) 신규지원 대상과제 공고",
-      "ancm_no": "산업통상부 공고 제2026-613호",
-      "ancm_date": "2026-09-22",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024237','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024237",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 대경권 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
@@ -391,7 +375,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 중부권 과학기술혁신지원사업 연구단 모집 공고",
