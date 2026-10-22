@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-10-22 08:59 KST",
+  "updated_at": "2026-10-23 08:58 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술기획평가원",
+      "title": "2026년도 제3차 기계장비산업기술개발사업 신규지원 대상과제 공고",
+      "ancm_no": "산업통상부 공고 제2026-661호",
+      "ancm_date": "2026-10-22",
+      "status": "공고예고",
+      "type": "품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024578','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024578",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
