@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26 08:13 KST",
+  "updated_at": "2026-10-27 09:24 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -19,22 +19,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024597','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024597",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 소재부품기술개발사업(4차) 신규지원 대상과제 공고(연장)",
-      "ancm_no": "산업통상부 공고 제2026-613호",
-      "ancm_date": "2026-10-26",
-      "status": "공고예고",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024577','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024577",
       "ancm_prg": "ancmPre"
     },
     {
@@ -120,22 +104,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2026년도 미래개척융합과학기술개발사업(한계돌파 R&D) 신규과제 공모",
-      "ancm_no": "과학기술정보통신부 공고 제2026 ？ 1003호",
-      "ancm_date": "2026-10-13",
-      "status": "공고예고",
-      "type": "분야공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024037','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024037",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "한국연구재단",
       "title": "TEST",
@@ -167,7 +135,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "(TEST) KISTEP  통합공고 테스트 입니다.",
@@ -183,23 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "중소기업기술정보진흥원",
       "title": "중소기업 수출 핵심품목 탄소감축 기술개발사업 실증 지원기관 모집 공모",
@@ -312,6 +264,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 미래개척융합과학기술개발사업(한계돌파 R&D) 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026 ？ 1003호",
+      "ancm_date": "2026-10-13",
+      "status": "공고접수중",
+      "type": "분야공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024037','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024037",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "기후에너지환경부",
       "agency": "한국에너지기술평가원",
       "title": "2026년도 에너지기술 수용성 제고 및 사업화 촉진 사업 신규지원 대상 연구개발과제 공고",
@@ -410,22 +378,6 @@
       "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 동남권 과학기술혁신지원사업 연구단 모집 공고(연장)",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
-      "ancm_date": "2026-09-11",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024177','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024177",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
       "title": "2026년 4극3특 호남권 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
       "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
       "ancm_date": "2026-09-11",
@@ -435,22 +387,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024160','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024160",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
-      "ancm_date": "2026-09-11",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024158','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024158",
       "ancm_prg": "ancmIng"
     },
     {
@@ -499,6 +435,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "017852",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 2,
+      "org": "중소벤처기업부",
+      "agency": "중소기업기술정보진흥원",
+      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
+      "ancm_no": "중소벤처기업부 공고 제2026-446호",
+      "ancm_date": "2026-07-10",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "019614",
       "ancm_prg": "ancmIng"
     },
     {
