@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-10-29 09:52 KST",
+  "updated_at": "2026-10-30 09:55 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "한국연구재단",
+      "title": "test",
+      "ancm_no": "NR_2026_090",
+      "ancm_date": "2026-10-30",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024617','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024617",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -24,13 +40,13 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "",
+      "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2027년도 전문기술인 활용 재난재해 대응기술 현장화 지원사업 신규과제 공모",
       "ancm_no": "과학기술정보통신부공고 제2026-1039호",
       "ancm_date": "2026-10-26",
       "status": "공고예고",
-      "type": "미등록",
+      "type": "품목지정공모",
       "detail_url": null,
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024677','ancmPre'); return false;",
       "attachments": [],
@@ -51,22 +67,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024439','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024439",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "다부처",
-      "agency": "정보통신산업진흥원",
-      "title": "2026년 지역거점 AX 혁신 기술개발 사업 신규지원 대상과제 공고(공정·응용 솔루션 AX R&D, 응용 제품 AX R&D)_KHIDI",
-      "ancm_no": "보건복지부 공고 제2026-779호",
-      "ancm_date": "2026-10-14",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024438','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024438",
       "ancm_prg": "ancmPre"
     },
     {
@@ -216,6 +216,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 국제공동연구 신속지원사업 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-1045호",
+      "ancm_date": "2026-10-29",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024697','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024697",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "산업통상부",
       "agency": "한국산업기술기획평가원",
       "title": "2026년도 제3차 기계장비산업기술개발사업 신규지원 대상과제 공고",
@@ -243,6 +259,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024477','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024477",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "다부처",
+      "agency": "정보통신산업진흥원",
+      "title": "2026년 지역거점 AX 혁신 기술개발 사업 신규지원 대상과제 공고(공정·응용 솔루션 AX R&D, 응용 제품 AX R&D)_KHIDI",
+      "ancm_no": "보건복지부 공고 제2026-779호",
+      "ancm_date": "2026-10-14",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024438','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024438",
       "ancm_prg": "ancmIng"
     },
     {
@@ -343,7 +375,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 퀀텀(양자)플랫폼 KRISS 차세대양자연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
@@ -359,7 +391,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 퀀텀(양자)플랫폼 KIST 양자활용연구거점사업단 양자공동연구실(JQL) 신규과제 공모",
@@ -378,7 +410,7 @@
       "page_num": 2,
       "org": "과학기술정보통신부",
       "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고(연장공고)",
+      "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고(재연장공고)",
       "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
       "ancm_date": "2026-09-11",
       "status": "공고접수중",
