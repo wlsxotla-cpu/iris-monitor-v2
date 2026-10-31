@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 09:55 KST",
+  "updated_at": "2026-10-31 09:44 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -67,6 +67,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024439','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024439",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "",
+      "agency": "우주항공청",
+      "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 정책지정과제",
+      "ancm_no": "SP_2026_006",
+      "ancm_date": "2026-10-15",
+      "status": "공고예고",
+      "type": "미등록",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024418','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024418",
       "ancm_prg": "ancmPre"
     },
     {
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국연구재단",
       "title": "test",
@@ -419,22 +435,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024158','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024158",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "중소제조 특화 Multi AI Agent 개발(R&D) 점프업 Track 시행계획 공고",
-      "ancm_no": "중소벤처기업부 공고 제2026-533호",
-      "ancm_date": "2026-08-31",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023857','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "023857",
       "ancm_prg": "ancmIng"
     },
     {
