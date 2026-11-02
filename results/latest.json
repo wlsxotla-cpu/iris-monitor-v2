@@ -1,10 +1,26 @@
 {
-  "updated_at": "2026-11-01 09:04 KST",
+  "updated_at": "2026-11-02 09:38 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "산업통상부",
+      "agency": "한국산업기술진흥원",
+      "title": "2027년도 소재부품장비 양산성능평가지원사업 총괄주관연구개발기관 모집 공고",
+      "ancm_no": "KI_2026_010",
+      "ancm_date": "2026-11-02",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024657','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024657",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -151,7 +167,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 1,
+      "page_num": 2,
       "org": "",
       "agency": "한국보건산업진흥원",
       "title": "test",
@@ -264,6 +280,22 @@
     {
       "tab": "접수중",
       "page_num": 1,
+      "org": "다부처",
+      "agency": "정보통신산업진흥원",
+      "title": "2026년 「AX실증밸리조성(R&D)」 사업 신규지원대상 과제 통합 재공고",
+      "ancm_no": "산업통상부 공고 제2026-0000호·기후에너지환경부 공고 제2026-0000호",
+      "ancm_date": "2026-11-02",
+      "status": "공고접수중",
+      "type": "지정공모,품목지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024717','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024717",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
       "title": "2026년도 국제공동연구 신속지원사업 신규과제 공모",
@@ -339,22 +371,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024420','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024420",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 강원특별자치도 과학기술혁신지원사업 연구단 모집공고(연장공고)",
-      "ancm_no": "과학기술정보통신부 공고 제2026 ？ 0948호",
-      "ancm_date": "2026-10-13",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024138','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024138",
       "ancm_prg": "ancmIng"
     },
     {
