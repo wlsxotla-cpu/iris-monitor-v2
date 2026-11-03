@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 09:38 KST",
+  "updated_at": "2026-11-03 11:53 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -104,22 +104,6 @@
     {
       "tab": "접수예정",
       "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
-      "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026-1015호",
-      "ancm_date": "2026-10-15",
-      "status": "공고예고",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024439','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024439",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
       "org": "",
       "agency": "우주항공청",
       "title": "2026년도 임무수요기반 성층권 드론 실증 플랫폼 개발 사업 2단계 정책지정과제",
@@ -167,7 +151,7 @@
     },
     {
       "tab": "접수예정",
-      "page_num": 2,
+      "page_num": 1,
       "org": "",
       "agency": "한국보건산업진흥원",
       "title": "test",
@@ -283,7 +267,7 @@
       "org": "다부처",
       "agency": "정보통신산업진흥원",
       "title": "2026년 「AX실증밸리조성(R&D)」 사업 신규지원대상 과제 통합 재공고",
-      "ancm_no": "산업통상부 공고 제2026-0000호·기후에너지환경부 공고 제2026-0000호",
+      "ancm_no": "산업통상부 공고 제2026-683호·기후에너지환경부 공고 제2026-1000호",
       "ancm_date": "2026-11-02",
       "status": "공고접수중",
       "type": "지정공모,품목지정공모",
@@ -298,7 +282,7 @@
       "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
-      "title": "2026년도 국제공동연구 신속지원사업 신규과제 공모",
+      "title": "2026년도 국제공동연구 신속지원사업 신규과제 공모(수정)",
       "ancm_no": "과학기술정보통신부 공고 제2026-1045호",
       "ancm_date": "2026-10-29",
       "status": "공고접수중",
@@ -339,6 +323,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024477','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024477",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "정보통신기획평가원",
+      "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
+      "ancm_no": "과학기술정보통신부 공고 제2026-1015호",
+      "ancm_date": "2026-10-15",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024439','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024439",
       "ancm_prg": "ancmIng"
     },
     {
@@ -423,7 +423,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "다부처",
       "agency": "정보통신산업진흥원",
       "title": "2026년 지역거점 AX 혁신 기술개발 사업 신규지원 대상과제 공고(표준모델 AX R&D)",
@@ -473,22 +473,6 @@
       "tab": "접수중",
       "page_num": 2,
       "org": "과학기술정보통신부",
-      "agency": "연구개발특구진흥재단",
-      "title": "2026년 4극3특 제주특별자치도 과학기술혁신지원사업 연구단 모집 공고(재연장공고)",
-      "ancm_no": "과학기술정보통신부 공고 제2026-0948호",
-      "ancm_date": "2026-09-11",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024158','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024158",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "과학기술정보통신부",
       "agency": "한국과학기술기획평가원",
       "title": "2026년 범부처 통합연구지원시스템 운영지원사업 신규과제 공모",
       "ancm_no": "IT_2026_001",
@@ -499,22 +483,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('017852','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "017852",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 2,
-      "org": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(스케일업 팁스)",
-      "ancm_no": "중소벤처기업부 공고 제2026-446호",
-      "ancm_date": "2026-07-10",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('019614','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "019614",
       "ancm_prg": "ancmIng"
     },
     {
