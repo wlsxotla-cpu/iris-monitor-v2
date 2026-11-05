@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 10:18 KST",
+  "updated_at": "2026-11-05 10:26 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-10-23 09:00 ~ 2026-11-05 18:00",
       "notice_date": "2026-10-23",
-      "dday": "D-1",
+      "dday": "D-0",
       "detail_id": null,
       "detail_url": null
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-10-08 09:00 ~ 2026-11-06 23:59",
       "notice_date": "2026-10-08",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": null,
       "detail_url": null
     },
@@ -30,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-10-19 09:00 ~ 2026-11-06 18:00",
       "notice_date": "2026-10-19",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": null,
       "detail_url": null
     },
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-10-19 09:00 ~ 2026-11-06 18:00",
       "notice_date": "2026-10-08",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": null,
       "detail_url": null
     },
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-9",
+      "dday": "D-8",
       "detail_id": null,
       "detail_url": null
     },
@@ -63,7 +63,18 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-9",
+      "dday": "D-8",
+      "detail_id": null,
+      "detail_url": null
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "2027년 시험인증산업경쟁력및신뢰성제고사업(유망시험서비스개발) 기술수요조사",
+      "plan_year": "2026",
+      "period": "2026-11-05 09:00 ~ 2026-11-26 18:00",
+      "notice_date": "2026-11-05",
+      "dday": "D-21",
       "detail_id": null,
       "detail_url": null
     },
@@ -74,7 +85,7 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-57",
+      "dday": "D-56",
       "detail_id": null,
       "detail_url": null
     }
