@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08 09:32 KST",
+  "updated_at": "2026-11-09 09:49 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-5",
+      "dday": "D-4",
       "detail_id": null,
       "detail_url": null
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-5",
+      "dday": "D-4",
       "detail_id": null,
       "detail_url": null
     },
@@ -30,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-11-05 09:00 ~ 2026-11-26 18:00",
       "notice_date": "2026-11-05",
-      "dday": "D-18",
+      "dday": "D-17",
       "detail_id": null,
       "detail_url": null
     },
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-53",
+      "dday": "D-52",
       "detail_id": null,
       "detail_url": null
     }
