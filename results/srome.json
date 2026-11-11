@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10 12:30 KST",
+  "updated_at": "2026-11-11 10:12 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": null,
       "detail_url": null
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-3",
+      "dday": "D-2",
       "detail_id": null,
       "detail_url": null
     },
@@ -30,7 +30,18 @@
       "plan_year": "2026",
       "period": "2026-11-09 09:00 ~ 2026-11-20 18:00",
       "notice_date": "2026-11-09",
-      "dday": "D-10",
+      "dday": "D-9",
+      "detail_id": null,
+      "detail_url": null
+    },
+    {
+      "category": "수요조사",
+      "status": "접수중",
+      "title": "수출형 방산체계 고도화를 위한AI 방산 R&D 품목발굴을 위한 기술수요조사",
+      "plan_year": "2026",
+      "period": "2026-11-10 09:00 ~ 2026-11-20 23:59",
+      "notice_date": "2026-11-10",
+      "dday": "D-9",
       "detail_id": null,
       "detail_url": null
     },
@@ -41,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-11-05 09:00 ~ 2026-11-26 18:00",
       "notice_date": "2026-11-05",
-      "dday": "D-16",
+      "dday": "D-15",
       "detail_id": null,
       "detail_url": null
     },
@@ -52,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-51",
+      "dday": "D-50",
       "detail_id": null,
       "detail_url": null
     }
