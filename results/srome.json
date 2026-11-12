@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11 10:12 KST",
+  "updated_at": "2026-11-12 11:14 KST",
   "items": [
     {
       "category": "수요조사",
@@ -8,7 +8,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": null,
       "detail_url": null
     },
@@ -19,7 +19,7 @@
       "plan_year": "2026",
       "period": "2026-10-26 09:00 ~ 2026-11-13 18:00",
       "notice_date": "2026-10-26",
-      "dday": "D-2",
+      "dday": "D-1",
       "detail_id": null,
       "detail_url": null
     },
@@ -30,7 +30,7 @@
       "plan_year": "2026",
       "period": "2026-11-09 09:00 ~ 2026-11-20 18:00",
       "notice_date": "2026-11-09",
-      "dday": "D-9",
+      "dday": "D-8",
       "detail_id": null,
       "detail_url": null
     },
@@ -41,7 +41,7 @@
       "plan_year": "2026",
       "period": "2026-11-10 09:00 ~ 2026-11-20 23:59",
       "notice_date": "2026-11-10",
-      "dday": "D-9",
+      "dday": "D-8",
       "detail_id": null,
       "detail_url": null
     },
@@ -52,7 +52,7 @@
       "plan_year": "2026",
       "period": "2026-11-05 09:00 ~ 2026-11-26 18:00",
       "notice_date": "2026-11-05",
-      "dday": "D-15",
+      "dday": "D-14",
       "detail_id": null,
       "detail_url": null
     },
@@ -63,7 +63,7 @@
       "plan_year": "2026",
       "period": "2026-10-16 09:00 ~ 2026-12-31 23:59",
       "notice_date": "2026-10-16",
-      "dday": "D-50",
+      "dday": "D-49",
       "detail_id": null,
       "detail_url": null
     }
