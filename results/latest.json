@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 11:14 KST",
+  "updated_at": "2026-11-13 10:47 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -36,6 +36,22 @@
       "attachments": [],
       "ancm_id": "017852",
       "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2026년도 제5차 과학기술분야 연구기획과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 2026-1088",
+      "ancm_date": "2026-11-13",
+      "status": "공고접수중",
+      "type": "지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024799','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "024799",
+      "ancm_prg": "ancmIng"
     },
     {
       "tab": "접수중",
@@ -163,22 +179,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024438','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024438",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "다부처",
-      "agency": "정보통신산업진흥원",
-      "title": "2026년 지역거점 AX 혁신 기술개발 사업 신규지원 대상과제 공고(공정·응용 솔루션 AX R&D, 응용 제품 AX R&D)_NRF, KEIT",
-      "ancm_no": "과학기술정보통신부 공고 제2026-1002호, 산업통상부 공고 제2026-643호",
-      "ancm_date": "2026-10-13",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024420','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024420",
       "ancm_prg": "ancmIng"
     },
     {
