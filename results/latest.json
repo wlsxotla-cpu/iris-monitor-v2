@@ -1,26 +1,10 @@
 {
-  "updated_at": "2026-11-14 10:25 KST",
+  "updated_at": "2026-11-15 09:59 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "재단법인 국가신약개발재단",
-      "title": "공고 테스트",
-      "ancm_no": "DD_2026_001",
-      "ancm_date": "2026-11-01",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('023737','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "023737",
-      "ancm_prg": "ancmPre"
-    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -83,6 +67,22 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024717','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024717",
+      "ancm_prg": "ancmIng"
+    },
+    {
+      "tab": "접수중",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "재단법인 국가신약개발재단",
+      "title": "공고 테스트",
+      "ancm_no": "DD_2026_001",
+      "ancm_date": "2026-11-01",
+      "status": "공고접수중",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('023737','ancmIng'); return false;",
+      "attachments": [],
+      "ancm_id": "023737",
       "ancm_prg": "ancmIng"
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 1,
+      "page_num": 2,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
