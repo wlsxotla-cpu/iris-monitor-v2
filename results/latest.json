@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 09:58 KST",
+  "updated_at": "2026-11-17 12:46 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -51,22 +51,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024657','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024657",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "다부처",
-      "agency": "정보통신산업진흥원",
-      "title": "2026년 「AX실증밸리조성(R&D)」 사업 신규지원대상 과제 통합 재공고",
-      "ancm_no": "산업통상부 공고 제2026-683호·기후에너지환경부 공고 제2026-1000호",
-      "ancm_date": "2026-11-02",
-      "status": "공고접수중",
-      "type": "지정공모,품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024717','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024717",
       "ancm_prg": "ancmIng"
     },
     {
@@ -138,22 +122,6 @@
       "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "정보통신기획평가원",
-      "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
-      "ancm_no": "과학기술정보통신부 공고 제2026-1015호",
-      "ancm_date": "2026-10-15",
-      "status": "공고접수중",
-      "type": "지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024439','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024439",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
       "title": "범부처 신속대응 R&D IITP 전담 지정 과제",
       "ancm_no": "해당없음(신속대응R&D)",
       "ancm_date": "2026-08-25",
@@ -183,7 +151,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
@@ -199,7 +167,7 @@
     },
     {
       "tab": "접수중",
-      "page_num": 2,
+      "page_num": 1,
       "org": "중소벤처기업부",
       "agency": "중소기업기술정보진흥원",
       "title": "2026년도 딥테크 챌린지 프로젝트(DCP)생태계혁신형 시행계획 공고",
