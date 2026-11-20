@@ -1,10 +1,42 @@
 {
-  "updated_at": "2026-11-19 11:30 KST",
+  "updated_at": "2026-11-20 11:16 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2027년도 1차 개인기초연구(핵심연구(유형A)) 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제 2026-1069호",
+      "ancm_date": "2026-11-05",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024760','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024760",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2027년도 1차 개인기초연구(핵심연구(한우물파기 기초연구)) 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제 2026-1069호",
+      "ancm_date": "2026-11-05",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024757','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024757",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
