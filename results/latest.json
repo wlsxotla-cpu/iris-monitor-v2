@@ -1,10 +1,42 @@
 {
-  "updated_at": "2026-11-20 11:16 KST",
+  "updated_at": "2026-11-21 11:09 KST",
   "tabs": [
     "접수예정",
     "접수중"
   ],
   "items": [
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2027년도 1차 개인기초연구(세종과학펠로우십(복귀·유치트랙)) 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-1069호",
+      "ancm_date": "2026-11-05",
+      "status": "공고예고",
+      "type": "자유공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024762','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024762",
+      "ancm_prg": "ancmPre"
+    },
+    {
+      "tab": "접수예정",
+      "page_num": 1,
+      "org": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "title": "2027년도 1차 개인기초연구(세종과학펠로우십(국내트랙)) 신규과제 공모",
+      "ancm_no": "과학기술정보통신부 공고 제2026-1069호",
+      "ancm_date": "2026-11-05",
+      "status": "공고예고",
+      "type": "자유공모,지정공모",
+      "detail_url": null,
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024761','ancmPre'); return false;",
+      "attachments": [],
+      "ancm_id": "024761",
+      "ancm_prg": "ancmPre"
+    },
     {
       "tab": "접수예정",
       "page_num": 1,
@@ -115,38 +147,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024677','ancmIng'); return false;",
       "attachments": [],
       "ancm_id": "024677",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "산업통상부",
-      "agency": "한국산업기술기획평가원",
-      "title": "2026년도 제3차 기계장비산업기술개발사업 신규지원 대상과제 공고",
-      "ancm_no": "산업통상부 공고 제2026-661호",
-      "ancm_date": "2026-10-22",
-      "status": "공고접수중",
-      "type": "품목지정공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024578','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024578",
-      "ancm_prg": "ancmIng"
-    },
-    {
-      "tab": "접수중",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "정보통신기획평가원",
-      "title": "범부처 신속대응 R&D IITP 전담 지정 과제",
-      "ancm_no": "해당없음(신속대응R&D)",
-      "ancm_date": "2026-08-25",
-      "status": "공고접수중",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024737','ancmIng'); return false;",
-      "attachments": [],
-      "ancm_id": "024737",
       "ancm_prg": "ancmIng"
     },
     {
