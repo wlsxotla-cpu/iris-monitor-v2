@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 12:30 KST",
+  "updated_at": "2026-11-27 12:36 KST",
   "tabs": [
     "접수예정",
     "접수중"
@@ -19,22 +19,6 @@
       "raw_link": "f_bsnsAncmBtinSituListForm_view('024937','ancmPre'); return false;",
       "attachments": [],
       "ancm_id": "024937",
-      "ancm_prg": "ancmPre"
-    },
-    {
-      "tab": "접수예정",
-      "page_num": 1,
-      "org": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "title": "2027년도 리더연구 후속과제 공모",
-      "ancm_no": "NR_2026_092",
-      "ancm_date": "2026-11-09",
-      "status": "공고예고",
-      "type": "자유공모",
-      "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024777','ancmPre'); return false;",
-      "attachments": [],
-      "ancm_id": "024777",
       "ancm_prg": "ancmPre"
     },
     {
@@ -74,15 +58,15 @@
       "page_num": 1,
       "org": "과학기술정보통신부",
       "agency": "한국연구재단",
-      "title": "2026년도 제5차 과학기술분야 연구기획과제 공모",
-      "ancm_no": "과학기술정보통신부 공고 2026-1088",
-      "ancm_date": "2026-11-13",
+      "title": "2027년도 리더연구 후속과제 공모",
+      "ancm_no": "NR_2026_092",
+      "ancm_date": "2026-11-09",
       "status": "공고접수중",
-      "type": "지정공모",
+      "type": "자유공모",
       "detail_url": null,
-      "raw_link": "f_bsnsAncmBtinSituListForm_view('024799','ancmIng'); return false;",
+      "raw_link": "f_bsnsAncmBtinSituListForm_view('024777','ancmIng'); return false;",
       "attachments": [],
-      "ancm_id": "024799",
+      "ancm_id": "024777",
       "ancm_prg": "ancmIng"
     },
     {
